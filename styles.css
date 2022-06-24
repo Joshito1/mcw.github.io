@@ -31,6 +31,19 @@ nav > ul > a {
   text-decoration: none;
 }
 
+.news {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #000000;
+
+}
 
 .logo {
   font-size: 5em;
