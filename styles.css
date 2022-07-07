@@ -13,7 +13,7 @@ body {
   background: rgb(255, 252, 252);
 }
 
-nav > ul {
+nav ul {
   margin: 0;
   display: flex;
   padding: 20px;
@@ -21,11 +21,9 @@ nav > ul {
   align-items: center;
   flex-wrap: wrap;
   background: #303030;
-
-
 }
 
-nav > ul > a {
+nav ul a {
   color: #fff;
   font-size: 22px;
   text-decoration: none;
@@ -42,13 +40,11 @@ nav > ul > a {
   align-items: center;
   flex-wrap: wrap;
   background: #000000;
-
 }
 
 .logo {
   font-size: 5em;
   color: azure;
-
 }
 
 header {
@@ -61,12 +57,9 @@ header {
   display: flex;
 }
 
-
 .version {
   position: fixed;
-  top: 940px;
+  top: 55em;
   left: 5px;
   color: rgb(96, 139, 107);
 }
-
-
