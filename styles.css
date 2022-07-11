@@ -58,8 +58,8 @@ header {
 }
 
 .version {
-  position: fixed;
-  top: 55em;
+  position: absolute;
+  top: 58.5em;
   left: 5px;
   color: rgb(96, 139, 107);
 }
