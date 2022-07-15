@@ -14,19 +14,17 @@ body {
 }
 
 .newFeaturetxt {
-  position: absolute;
-  top: 18em;
-  left: 97em;
+  text-align: center;
+  position: fixed;
+  top: 285px;
+  left: 78em;
   transform: rotate(8deg);
 }
 
 #arrow {
-  position: absolute;
+  position: fixed;
   top: 25px;
-  left: 5em;
-}
-
-#arrow {
+  left: 3em;
   -webkit-animation: action 1s infinite alternate;
   animation: action 1s infinite alternate;
 }
@@ -50,13 +48,15 @@ body {
 }
 
 #status {
+  overflow: hiddin;
+  width: 600px;
+  text-align: center;
   color: #bbb814;
   font-size: 20px;
   text-shadow: 1px 1px #0000008f;
-  padding: 40px;
-  position: absolute;
-  top: 123px;
-  left: 73em;
+  position: fixed;
+  top: 270px;
+  left: 50em;
 }
 
 .pop {
@@ -88,9 +88,9 @@ body {
   }
 }
 .tilt {
-  -ms-transform: rotate(15deg);
-  -webkit-transform: rotate(15deg);
-  transform: rotate(15deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 nav ul {
