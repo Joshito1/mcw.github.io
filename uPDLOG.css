@@ -21,6 +21,10 @@ nav ul a {
   font-size: 22px;
   text-decoration: none;
 }
+
+.nav-ul {
+  list-style-type: none;
+}
 .back {
 }
 .logo {
