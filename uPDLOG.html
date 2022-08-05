@@ -2,90 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="uPDLOG.css">
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="uPDLOG.css">
 
-    <title>Update Log</title>
+  <title>Update Log</title>
 </head>
 
 <body>
-    <!-- 
+  <!-- 
         Ok so what I was saying about the nav bar is to basically just have every element of the nav bar inside one nav tag as shown down below. If you use more than one nav tag
         it ruins the whole purpose of the nav tag since usually websites only have one navigation header.
      -->
-    <nav>
-        <!-- I don't understand the purpose of the div here without a class name you could do the same thing without the extra div -->
-        <!-- Also, unless absolutely neccessary I wouldn't have any css code in the html file  -->
-        <!-- You don't need all of the extra ul tags either since you can put them all under the same tag -->
-        <!-- This was a mistake I also did, you don't really need the li tags if they are links because I feel like it's just an extra tag that has no use. This is your choice tho
+  <nav>
+    <!-- I don't understand the purpose of the div here without a class name you could do the same thing without the extra div -->
+    <!-- Also, unless absolutely neccessary I wouldn't have any css code in the html file  -->
+    <!-- You don't need all of the extra ul tags either since you can put them all under the same tag -->
+    <!-- This was a mistake I also did, you don't really need the li tags if they are links because I feel like it's just an extra tag that has no use. This is your choice tho
         and I think including the li tag is technically best practice I just don't see the use for it. -->
-        <ul class="nav-ul">
-            <a class="back" href="index.html">Back To Homepage</a>
-            <a class="logo" href="#">MC Lads</a>
-            <a class="commentBox" href="comment_box.html">Comment Box</a>
-            <a class="hidMes" href="HidMes.html">Credits</a>
-        </ul>
-    </nav>
+    <ul class="nav-ul">
+      <li><a class="back" href="index.html">Back To Homepage</a></li>
+      <li><a class="logo" href="#">MC Lads</a></li>
+      <li><a class="commentBox" href="comment_box.html">Comment Box</a></li>
+      <li><a class="hidMes" href="hidMes.html">Credits</a></li>
+    </ul>
+  </nav>
 
-    <!-- End of Nav  -->
-    <!-- Start of Changes Text -->
-    <div class="text">
-        <div class="info">
-            <!--  -->
-            <h1>Update/change Log</h1>
-            <h2>Current Version and changes made</h2>
-            <p>
-                8/(fill in)/2022-Updated "Minecraft Servers page" Added Hypixel server
-                information (Server made by Ian) and also Bedrock Server information
-            </p>
-            <p>8/(fill in)/2022-Updated Change Log Gui</p>
-            <p>8/(fill in)/2022-Newer gui on every page</p>
-            <p>Major</p>
-            <!--  -->
-            <h2>Upcoming Versions and changes Log</h2>
-            <p></p>
-            <p>How to use website</p>
-            <p>Minecraft server and server, finally in progress</p>
-            <p>Better Comment box</p>
-            <p></p>
-            <p>Minor</p>
-            <!--  -->
-            <h2>Previous Versions and changes Log</h2>
-            <p>
-                7/15/2022-
-                <abbr title="I really like how this turn out XD Let me know what you guys think">New!</abbr>- The Splash
-                Text,
-                Just like Minecraft. (Only seen on Homepage)
-            </p>
+  <!-- End of Nav  -->
+  <!-- Start of Changes Text -->
+  <div class="text">
+    <div class="info">
+      <!--  -->
+      <h1>Update/change Log</h1>
+      <h2>Current Version and changes made</h2>
+      <p>
+        8/(fill in)/2022-Updated "Minecraft Servers page" with gui, Added Hypixel server
+        information (Server made by Ian) and also Bedrock Server information
+      </p>
+      <p>8/(fill in)/2022-Updated Change Log Gui</p>
+      <p>8/(fill in)/2022-Newer gui on most pages</p>
+      <p>Major</p>
+      <!--  -->
+      <h2>Upcoming Versions and changes Log</h2>
+      <p></p>
+      <p>How to use website</p>
+      <p>Minecraft server and server, finally in progress</p>
+      <p>Better Comment box</p>
+      <p></p>
+      <p>Minor</p>
+      <!--  -->
+      <h2>Previous Versions and changes Log</h2>
+      <p>
+        7/15/2022-
+        <abbr title="I really like how this turn out XD Let me know what you guys think">New!</abbr>- The Splash
+        Text,
+        Just like Minecraft. (Only seen on Homepage)
+      </p>
 
-            <p>
-                6/26/2022-Changed a bit of viewport scaling so text could be a tiny
-                bit more visible on mobile (but still under a bit of development)
-            </p>
-            <p>6/24/2022-Minor text and gui changes</p>
-            <p>6/24/2022-Added comment box (Not quite working, but it works)</p>
-            <p>6/23/2022-New Homepage Gui</p>
-            <p>
-                6/23/2022-New and clear wording. explaination on whats going to be on
-                pages.
-            </p>
-            <!--  -->
-            <h2>Ideas or features that might come to the website</h2>
-            <p>Live Chat</p>
-        </div>
-        <!-- End of Changed Text -->
-        <!-- Start of Bottom Info -->
-        <!-- <div class="bottomInfo">    
-        <p>Last Modified: 8/2/22</p>
-        <p>Date Started: 6/16/2022</p>
-        <p>Version: Major</p>
-      </div> -->
-        <!-- End of Bottom Info -->
+      <p>
+        6/26/2022-Changed a bit of viewport scaling so text could be a tiny
+        bit more visible on mobile (but still under a bit of development)
+      </p>
+      <p>6/24/2022-Minor text and gui changes</p>
+      <p>6/24/2022-Added comment box (Not quite working, but it works)</p>
+      <p>6/23/2022-New Homepage Gui</p>
+      <p>
+        6/23/2022-New and clear wording. explaination on whats going to be on
+        pages.
+      </p>
+      <!--  -->
+      <h2>Ideas or features that might come to the website</h2>
+      <p>Live Chat</p>
+    </div>
+  </div>
+  <!-- End of Changed Text -->
+  <!-- Start of Bottom Info -->
+  <div class="bottomInfo">
+    <p>Last Modified: 8/2/22</p>
+    <p>Date Started: 6/16/2022</p>
+    <p>Version: Major</p>
+  </div>
+  <!-- End of Bottom Info -->
 
 </body>
 
