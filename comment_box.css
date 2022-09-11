@@ -1,0 +1,107 @@
+html {
+  /* background: url("image/PTexture.png") center center no-repeat fixed;
+  background-size: cover; */
+  font-family: "VT323", "noto sans";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Start of navigation bar */
+nav ul {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #303030;
+}
+
+nav ul a {
+  position: relative;
+  display: flex;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.back {
+  margin-right: auto;
+}
+
+.back:hover {
+  color: #6b9275;
+}
+
+.back:active {
+  color: #49614f;
+}
+
+.logo {
+  margin-right: 7.5em;
+  font-size: 5em;
+  color: azure;
+}
+
+h1 {
+  color: rgb(96, 139, 107);
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 75px;
+}
+
+header {
+  color: rgb(96, 139, 107);
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 75px;
+  display: flex;
+  bottom: 90em;
+}
+
+/* End of navigation bar */
+/* Start of comment box */
+#comment-box {
+  margin-top: 50em;
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  height: 1%;
+  padding: 8px;
+  background-color: #d0e2bc;
+}
+
+#post {
+  margin-top: 50em;
+  border: none;
+  border-radius: 5px;
+  background-color: #d0e2bc;
+  padding: 5px;
+}
+
+#post:hover {
+  background-color: #6b9275;
+}
+
+#post:active {
+  background-color: #49614f;
+}
+/* End of comment box */
+
+.email {
+  margin-top: 2em;
+  font-size: 22px;
+}

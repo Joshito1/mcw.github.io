@@ -1,0 +1,63 @@
+html {
+  /* background: url("image/PTexture.png") center center no-repeat fixed;
+  background-size: cover; */
+  font-family: "VT323", "noto sans";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 140%;
+  text-align: center;
+  padding-left: 17em;
+  padding-right: 17em;
+}
+
+/* start of navigation bar */
+nav ul {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #303030;
+}
+
+nav ul a {
+  position: relative;
+  display: flex;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.back {
+  margin-right: auto;
+}
+
+.back:hover {
+  color: #6b9275;
+}
+
+.back:active {
+  color: #49614f;
+}
+
+.logo {
+  margin-right: 7.5em;
+  font-size: 5em;
+  color: azure;
+}
+/* end of navigation bar */

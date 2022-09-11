@@ -1,0 +1,82 @@
+@media screen and (max-width: 700px) {
+}
+html {
+  /* background: url("image/PTexture.png") center center no-repeat fixed;
+    background-size: cover; */
+  font-family: "VT323", "noto sans";
+  padding: 0;
+  margin: 0;
+  background-color: #f1edec;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* start of navigation bar */
+nav ul {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #303030;
+}
+
+nav ul a {
+  position: relative;
+  display: flex;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.back {
+  margin-right: auto;
+}
+
+.back:hover {
+  color: #6b9275;
+}
+
+.back:active {
+  color: #49614f;
+}
+
+.logo {
+  margin-right: 7.5em;
+  font-size: 5em;
+  color: azure;
+}
+/* end of navigation bar */
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+.serverInfoboxes {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.serverInfoboxes div {
+  width: 100px;
+  margin: 30px;
+  padding: 50px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 25px;
+  background-color: #f8f5f4;
+  flex-basis: 20em;
+}
+#javaInfotxt,
+#bugrockInfotxt {
+  margin: 1em;
+  padding: 1em;
+}
