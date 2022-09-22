@@ -26,7 +26,7 @@ nav ul a {
   position: relative;
   display: flex;
   color: #fff;
-  font-size: 22px;
+  font-size: 160%;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -48,60 +48,45 @@ nav ul a {
 }
 
 .logo {
-  margin-right: 7.5em;
+  margin-right: 786px;
   font-size: 5em;
-  color: azure;
 }
 
+/* End of navigation bar */
 h1 {
   color: rgb(96, 139, 107);
   text-align: center;
   font-weight: bold;
-  line-height: 50px;
-  padding: 75px;
+  font-size: 250%;
 }
 
 header {
   color: rgb(96, 139, 107);
   text-align: center;
-  font-size: 22px;
+  font-size: 380%;
   font-weight: bold;
-  line-height: 50px;
-  padding: 75px;
-  display: flex;
-  bottom: 90em;
 }
 
-/* End of navigation bar */
 /* Start of comment box */
-#comment-box {
-  margin-top: 50em;
-  border: none;
-  border-radius: 5px;
-  width: 15%;
-  height: 1%;
-  padding: 8px;
-  background-color: #d0e2bc;
-}
-
-#post {
-  margin-top: 50em;
-  border: none;
-  border-radius: 5px;
-  background-color: #d0e2bc;
-  padding: 5px;
-}
-
-#post:hover {
-  background-color: #6b9275;
-}
-
-#post:active {
-  background-color: #49614f;
-}
 /* End of comment box */
 
 .email {
-  margin-top: 2em;
-  font-size: 22px;
+  margin-top: 9em;
+  margin-left: 7px;
+  font-size: 160%;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-right: 0px;
+  }
+
+  h1 {
+    padding-bottom: 0;
+  }
+
+  .email {
+    margin-left: 7px;
+    margin-right: 1em;
+  }
 }

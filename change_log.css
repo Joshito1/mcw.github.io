@@ -1,5 +1,3 @@
-@media screen and (max-width: 700px) {
-}
 html {
   /* background: url("image/PTexture.png") center center no-repeat fixed;
     background-size: cover; */
@@ -28,7 +26,7 @@ nav ul a {
   position: relative;
   display: flex;
   color: #fff;
-  font-size: 22px;
+  font-size: 160%;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -55,30 +53,18 @@ nav ul a {
 
 .logo {
   font-size: 5em;
-  color: azure;
-  margin-right: 156px;
+  margin-right: 269px;
 }
 
 .commentBox {
   margin-right: 13em;
 }
+
 /* End of navigation bar */
 .text {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
 }
 
 .text .info {
-  margin-top: 50px;
-  margin-left: 4em;
-  margin-right: 4em;
-  padding: 50px;
-  text-align: center;
-  font-size: 160%;
-  background-color: #6b9275;
-  line-height: 25px;
-  flex-basis: 60em;
 }
 
 h1 {
@@ -101,7 +87,29 @@ h2 {
 
 .bottomInfo {
   font-family: "VT323", "noto sans";
-  font-size: 130%;
+  font-size: 160%;
   margin-top: 3em;
   margin-left: 5px;
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    margin-right: 0px;
+  }
+  .commentBox {
+    margin-right: 70px;
+  }
+
+  h1 {
+    line-height: 50px;
+  }
+
+  .text {
+    margin-left: 50em;
+    margin-right: 50em;
+  }
+
+  .text .info {
+    font-size: 130%;
+  }
 }

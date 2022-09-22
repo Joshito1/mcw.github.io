@@ -26,7 +26,7 @@ nav ul a {
   position: relative;
   display: flex;
   color: #fff;
-  font-size: 22px;
+  font-size: 160%;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -48,16 +48,29 @@ nav ul a {
 }
 
 .logo {
-  margin-right: 7.5em;
+  margin-right: 786px;
   font-size: 5em;
-  color: azure;
 }
+
 /* End of navigation bar */
 h1 {
   text-align: center;
+  font-size: 300%;
 }
 .contribution {
   position: relative;
   text-align: center;
   font-size: 250%;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-right: 0px;
+  }
+
+  .contribution {
+    font-size: 160%;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 }

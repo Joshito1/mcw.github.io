@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-/* start of navigation bar */
+/* Start of navigation bar */
 nav ul {
   position: relative;
   margin: 0;
@@ -49,26 +49,7 @@ nav ul a {
 }
 
 .logo {
-  margin-right: 786px;
+  margin-right: 7.5em;
   font-size: 5em;
-}
-
-/* end of navigation bar */
-
-header {
-  font-size: 160%;
-  text-align: center;
-  padding-left: 17em;
-  padding-right: 17em;
-}
-
-@media screen and (max-width: 800px) {
-  .logo {
-    margin-right: 0px;
-  }
-
-  header {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  color: azure;
 }
