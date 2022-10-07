@@ -1,102 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="change_log.css" />
 
-    <title>Update Log</title>
-  </head>
-  <body>
-    <nav>
-      <ul class="nav-ul">
-        <a class="back" href="index.html">Back To Homepage</a>
-        <a class="logo" href="#">MC Lads</a>
-        <a class="commentBox" href="comment_box.html">Comment Box</a>
-        <a class="credits" href="credits.html">Credits</a>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="change_log.css" />
 
-    <!-- End of Nav  -->
-    <!-- Start of Changes Text -->
-    <div class="text">
-      <div class="info">
-        <!--  -->
-        <h1>Update/change Log</h1>
-        <h2>Latest changes made</h2>
-        <p>
-          <span class="cur_ver_txt">Current Version: </span>
-          <span class="top_version_number">1.1.1</span>
-        </p>
-        <p>
-          9/_/22- Added A drop down for small screens. <br />
-          9/_/22- Added notifications (Click the bell icon for more info) <br />
-          9/_/22- Fixed a minor confusion, while writing code on a small screen
-          (Sorry my fault, I wrote the wrong dimensions)
-        </p>
-        <!--  -->
-        <h2>Upcoming Versions and changes Log</h2>
-        <p>
-          -Drop down menu on navigation bar, for the extra links on pages (For
-          small screens).-
-        </p>
-        <p>-Update "Minecraft Servers" Page</p>
-        <p>-Update "Minecraft News" Page-</p>
-        <p>-Update "About The Developer" Page-</p>
-        <p>-Improve "Comment Box" Page (Can be found within Change Log)-</p>
-        <p>-A How to use website quick tutorial.-</p>
-        <p>-Minecraft server and server (Still in progress.)-</p>
-        <p></p>
-        <!--  -->
-        <h2>Previous Versions and changes Log</h2>
-        <p>
-          9/11/2022- Website now fully mobile compatible! YAY, Finally!! (For
-          certain devices, so still a little bit under development)
-        </p>
-        <p>
-          9/10/2022- All of the Websites pages have been updated to have the
-          newer UI
-        </p>
+  <title>Update Log</title>
+</head>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("dropdown-info").classList.toggle("show");
+  }
+</script>
 
-        <p>
-          7/15/2022-
-          <abbr
-            title="I really like how this turn out XD Let me know what you guys think"
-            >New!</abbr
-          >- The Splash Text, Just like Minecraft. (Only seen on Homepage)
-        </p>
-
-        <p>
-          6/26/2022-Changed a bit of viewport scaling so text could be a tiny
-          bit more visible on mobile (but still under a bit of development)
-        </p>
-        <p>6/24/2022-Minor text and UI changes</p>
-        <p>6/24/2022-Added comment box (Not quite working, but it works)</p>
-        <p>6/23/2022-New Homepage UI</p>
-        <p>
-          6/23/2022-New and clear wording. explaination on whats going to be on
-          pages.
-        </p>
-        <!--  -->
-        <h2>Ideas or features that might come to the website</h2>
-        <p>Live Chat</p>
+<body>
+  <nav>
+    <ul class="nav-ul">
+      <!-- Start of drop_down and links -->
+      <div class="dropdown-div">
+        <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="images/Drop_down.png"
+            alt="drop_down"></button>
+        <div id="dropdown-info" class="dropdown-content">
+          <a href="index.html">&#60; Back To Homepage</a>
+          <a href="comment_box.html">Comment Box</a>
+          <a href="credits.html">Credits</a>
+        </div>
       </div>
+      <!-- End of drop_down and links -->
+      <!-- Start of original nav-bar links -->
+      <a id="back" class="nav-left" href="index.html">Back To Homepage</a>
+      <a class="logo" href="#">MC Lads</a>
+      <a id="commentBox" class="nav-right" href="comment_box.html">Comment Box</a>
+      <a class="nav-right" href="credits.html">Credits</a>
+      <!-- End of original nav-bar links -->
+
+    </ul>
+  </nav>
+
+  <!-- End of Nav  -->
+  <!-- Start of Changes Text -->
+  <div class="text">
+    <div class="info">
+      <!--  -->
+      <h1>Update/change Log</h1>
+      <h2>Latest changes made</h2>
+      <p>
+        <span class="cur_ver_txt">Current Version: </span>
+        <span class="top_version_number">1.1.1</span>
+      </p>
+      <p>
+        9/_/22- Added A drop down for small screens.
+        <hr>
+        9/_/22- Added notifications (Click the bell icon for more info)
+        <hr>
+        9/_/22- Fixed a minor confusion, while writing code on a small screen
+        (Sorry my fault, I wrote the wrong dimensions)
+      </p>
+      <!--  -->
+      <h2>Upcoming Versions and changes Log</h2>
+      <p>
+        -Drop down menu on navigation bar, for the extra links on pages (For
+        small screens).-
+      </p>
+      <hr>
+      <p>-Update "Minecraft Servers" Page-</p>
+      <hr>
+      <p>-Update "Minecraft News" Page-</p>
+      <hr>
+      <p>-Update "About The Developer" Page-</p>
+      <hr>
+      <p>-Improve "Comment Box" Page (Can be found within Change Log)-</p>
+      <p>-A How to use website quick tutorial.-</p>
+      <hr>
+      <p>-Minecraft server and server (Still in progress.)-</p>
+      <hr>
+      <p></p>
+      <!--  -->
+      <h2>Previous Versions and changes Log</h2>
+      <p>
+        9/11/2022- Website now fully mobile compatible! YAY, Finally!! (For
+        certain devices, so still a little bit under development)
+      </p>
+      <hr>
+      <p>
+        9/10/2022- All of the Websites pages have been updated to have the
+        newer UI
+      </p>
+      <hr>
+
+      <p>
+        7/15/2022-
+        <abbr title="I really like how this turn out XD Let me know what you guys think">New!</abbr>- The Splash Text,
+        Just like Minecraft. (Only seen on Homepage)
+      </p>
+      <hr>
+
+      <p>
+        6/26/2022-Changed a bit of viewport scaling so text could be a tiny
+        bit more visible on mobile (but still under a bit of development)
+      </p>
+      <hr>
+      <p>6/24/2022-Minor text and UI changes</p>
+      <hr>
+      <p>6/24/2022-Added comment box (Not quite working, but it works)</p>
+      <hr>
+      <p>6/23/2022-New Homepage UI</p>
+      <hr>
+      <p>
+        6/23/2022-New and clear wording. explaination on whats going to be on
+        pages.
+      </p>
+      <hr>
+      <!--  -->
+      <h2>Ideas or features that might come to the website</h2>
+      <p>Live Chat</p>
     </div>
-    <!-- End of Changed Text -->
-    <!-- Start of Bottom Info -->
-    <div class="bottomInfo">
-      <p>Last Modified: 9/_/22</p>
-      <p>Date Started: 6/16/2022</p>
-      <p>Version: 1.1.1</p>
-    </div>
-    <!-- End of Bottom Info -->
-  </body>
+  </div>
+  <!-- End of Changed Text -->
+  <!-- Start of Bottom Info -->
+  <div class="bottomInfo">
+    <p>Last Modified: 9/_/22</p>
+    <p>Date Started: 6/16/2022</p>
+    <p>Version: 1.1.1</p>
+  </div>
+  <!-- End of Bottom Info -->
+</body>
+
 </html>

@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="about_the_dev.css" />
-    <title>About The Developer</title>
-  </head>
-  <body>
-    <!-- Start of Navigation -->
-    <nav>
-      <ul class="nav-ul">
-        <a class="back" href="index.html">Back To Homepage</a>
-        <a class="logo" href="#">MC Lads</a>
-      </ul>
-    </nav>
-    <!-- End of Navigation -->
-    <header>
-      <h1>About The Developer</h1>
-      <p>
-        Hi, Websites Developer Here, Jose Luis Barcelo Welcome to The MC Lads
-        Website!
-      </p>
-      <p>Still in progress... hehe</p>
-      <!-- <p>text pending..</p> -->
-    </header>
-  </body>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="about_the_dev.css" />
+  <title>About The Developer</title>
+</head>
+<script>
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("dropdown-info").classList.toggle("show");
+  }
+</script>
+
+<body>
+  <!-- Start of Navigation -->
+  <nav>
+    <ul class="nav-ul">
+      <!-- Start of drop_down and links -->
+      <div class="dropdown-div">
+        <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="images/Drop_down.png"
+            alt="drop_down"></button>
+        <div id="dropdown-info" class="dropdown-content">
+          <a href="index.html"> &#60; Back To Homepage</a>
+
+        </div>
+      </div>
+      <!-- End of drop_down and links -->
+
+      <a class="back" href="index.html">Back To Homepage</a>
+      <a class="logo" href="#">MC Lads</a>
+    </ul>
+  </nav>
+  <!-- End of Navigation -->
+  <header>
+    <h1>About The Developer</h1>
+    <p>
+      Hi, Websites Developer Here, Jose Luis Barcelo Welcome to The MC Lads
+      Website!
+    </p>
+    <p>Still in progress... hehe</p>
+    <!-- <p>text pending..</p> -->
+  </header>
+</body>
+
 </html>

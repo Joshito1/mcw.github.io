@@ -12,11 +12,28 @@
   <link rel="stylesheet" href="mc_server_info.css" />
   <title>Minecraft Servers</title>
 </head>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("dropdown-info").classList.toggle("show");
+  }
+</script>
 
 <body>
   <!-- Start of Navigation -->
   <nav>
     <ul class="nav-ul">
+      <!-- Start of drop_down and links -->
+      <div class="dropdown-div">
+        <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="images/Drop_down.png"
+            alt="drop_down"></button>
+        <div id="dropdown-info" class="dropdown-content">
+          <a href="index.html"> &#60; Back To Homepage</a>
+        </div>
+      </div>
+      <!-- End of drop_down and links -->
+
       <a class="back" href="index.html">Back To Homepage</a>
       <a class="logo" href="#">MC Lads</a>
     </ul>
@@ -48,9 +65,9 @@
       <p>The Dev will soon Put the Server Info here, waiting for Server Admin...</p>
     </div>
   </div> -->
-  <!-- End of Java Server Info -->
+    <!-- End of Java Server Info -->
 
-  <!-- <p>
+    <!-- <p>
       Sorry.. This Page is still in development, The Dev will soon update This.
     </p>
     <p>thank you.</p>
