@@ -73,16 +73,31 @@
 
   <p class="version">Version: 1.1.1</p>
 
-  <div class="cookie-banner" style="display: block">
-    <button class="close">&times;</button>
+  <div class="cookie-banner">
     <p class="cookie-banner-txt">
-      The Website will be using cookies for the best possible experience
+      The Website uses cookies for the best possible experience. It will not sell users Information.
     </p>
+    <button class="btn">Ok</button>
+    <button onclick="location.href='cookie_info.html'" type="button" class="cookie-info">Learn more</button>
   </div>
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="all.js"></script>
+  <script>
+    const cookieBox = document.querySelector(".cookie-banner"),
+      acceptBtn = cookieBox.querySelector("button");
+
+    acceptBtn.onclick = () => {
+      //setting cookie for certain time, after one month it'll be expired automatically
+      document.cookie = "CookieBy=CodingNepal; max-age=" + 60;
+      if (document.cookie) { //if cookie is set
+        cookieBox.classList.add("hide"); //hide cookie box
+      } else { //if cookie not set then alert an error
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
+    }
+    let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+  </script>
 
 </body>
 

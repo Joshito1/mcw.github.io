@@ -88,12 +88,6 @@ nav ul a {
 .nav-ul {
   list-style-type: none;
 }
-/* Drop down Start */
-.drop-down-div {
-  display: none;
-}
-
-/* Drop down End */
 
 .logo {
   font-size: 5em;
@@ -164,7 +158,7 @@ nav ul a {
 
 .notification-bell-btn {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -216,6 +210,57 @@ header {
   color: rgb(96, 139, 107);
 }
 
+/* Cookie consent Start */
+.cookie-banner {
+  position: fixed;
+  font-size: 180%;
+  bottom: 2em;
+  right: 2em;
+  width: 20%;
+  padding: 5px 14px;
+  background-color: #303030;
+  color: #6b9275;
+  border: dashed 1px rgb(175, 175, 175);
+  border-radius: 3px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  position: relative;
+  margin-left: 5em;
+  margin-bottom: 1em;
+  font-size: 70%;
+  background-color: #303030;
+  color: #fff;
+  border: dashed 1px;
+  cursor: pointer;
+}
+
+.cookie-info {
+  margin-left: 1em;
+  font-size: 70%;
+  background-color: #303030;
+  color: #fff;
+  border: dashed 1px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.cookie-info:hover {
+  color: #6b9275;
+}
+
+.btn:active,
+.cookie-info:active {
+  color: #49614f;
+}
+
+/* Cookie consent End */
+
 /* Temporary Mobile compatibility */
 
 @media only screen and (max-width: 430px) {
@@ -264,4 +309,41 @@ header {
     width: 10%;
     height: auto;
   }
+
+  /* Cookie consent Start */
+  .cookie-banner {
+    position: fixed;
+    font-size: 180%;
+    bottom: 1px;
+    left: 5px;
+    width: 90%;
+    padding: 5px 14px;
+    background-color: #303030f6;
+    color: #6b9275;
+    border: dashed 1px rgb(175, 175, 175);
+    border-radius: 3px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn {
+    position: relative;
+    margin-left: 4em;
+    margin-bottom: 1em;
+    font-size: 70%;
+    background-color: #303030;
+    color: #fff;
+    border: dashed 1px;
+    cursor: pointer;
+  }
+
+  .cookie-info {
+    margin-left: 1em;
+    font-size: 70%;
+    background-color: #303030;
+    color: #fff;
+    border: dashed 1px;
+    cursor: pointer;
+  }
+
+  /* Cookie consent End */
 }
