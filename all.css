@@ -1,0 +1,24 @@
+html {
+  /* background: url("image/PTexture.png") center center no-repeat fixed;
+  background-size: cover; */
+  font-family: "VT323", "noto sans";
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20em;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.ddbrk {
+  width: 20em;
+  border-left: 0;
+  border-right: 0;
+  border-top: 2px dotted #6b9275;
+  border-bottom: 0;
+  background-size: cover;
+}

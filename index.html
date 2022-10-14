@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
   <title>MC Lads Website</title>
+  <link rel="stylesheet" href="all.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
-<script src="index.js"></script>
 
 <body>
   <div class="tilt">
@@ -24,12 +24,15 @@
     <ul class="nav-ul">
       <!-- Start of drop_down and links -->
       <div class="dropdown-div">
-        <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="images/Drop_down.png"
-            alt="drop_down"></button>
+        <button onclick="myFunction()" class="dropbtn"><span id="dropdown-png-span"><img id="dropdown-png"
+              src="images/Drop_down.png" alt="drop_down"></span></button>
         <div id="dropdown-info" class="dropdown-content">
           <a href="about_the_dev.html">About The Developer</a>
+          <hr class="ddbrk">
           <a href="mc_news.html">Minecraft News</a>
+          <hr class="ddbrk">
           <a href="mc_server_info.html">Minecraft Servers</a>
+          <hr class="ddbrk">
           <a href="change_log.html">Change Log</a>
         </div>
       </div>
@@ -46,8 +49,11 @@
   </nav>
 
   <!-- Start of notification bell -->
-  <a id="notification-bell" href="notifications.html"><img src="images/notification_bell.png" alt="Notifications"
-      id="notification-bell-png" /></a>
+  <a class="notification-bell-btn" href="notifications.html">
+    <div class="notification-bell-png-div"><img src="images/notification_bell.png" alt="Notifications"
+        class="notification-bell-png" /></div>
+    <div class="notification-bell-banner">0</div>
+  </a>
   <!-- end of notification bell -->
 
   <header>
@@ -56,7 +62,7 @@
       In here I will be putting the information dedicated To both servers; The
       MC Dedicated Server and The Server itself. There will also be other cool
       pages! but we'll have to see what those things will be, Because I still
-      dont know what theyll be, hehe (nervous laugh). So do please give
+      dont know what theyll be, (nervous laugh). So do please give
       suggestions or ideas on what we could put on the website. So I hope you
       enjoy this website and hope you enjoy your rest of your day :D
     </div>
@@ -66,6 +72,18 @@
   <!-- End of tutorial -->
 
   <p class="version">Version: 1.1.1</p>
+
+  <div class="cookie-banner" style="display: block">
+    <button class="close">&times;</button>
+    <p class="cookie-banner-txt">
+      The Website will be using cookies for the best possible experience
+    </p>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="all.js"></script>
+
 </body>
 
 </html>

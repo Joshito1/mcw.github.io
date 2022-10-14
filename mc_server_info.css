@@ -1,14 +1,5 @@
-html {
-  /* background: url("image/PTexture.png") center center no-repeat fixed;
-    background-size: cover; */
-  font-family: "VT323", "noto sans";
-  padding: 0;
-  margin: 0;
-  background-color: #f1edec;
-}
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #f8f5f4;
 }
 /* start of navigation bar */
 nav ul {
@@ -77,7 +68,7 @@ nav ul a {
   position: absolute;
   background-color: #303030f5;
   min-width: 25em;
-  min-height: 10em;
+  min-height: auto;
   margin-top: 1.3em;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -104,33 +95,43 @@ nav ul a {
   display: block;
 }
 /* Drop down End */
+.txtbrk {
+  width: 10em;
+  border-left: 0;
+  border-right: 0;
+  border-top: 2px dotted #000000;
+  border-bottom: 0;
+}
 
 h1 {
   font-size: 5em;
   text-align: center;
 }
-.serverInfoboxes {
+.serverboxes {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  font-size: 160%;
 }
-.serverInfoboxes div {
-  width: 100px;
-  margin: 30px;
-  padding: 50px;
+.serverboxes .bugrock-box-div,
+.java-box-div {
+  padding: 40px;
   text-align: center;
+  background-color: #fff;
   line-height: 75px;
-  background-color: #f8f5f4;
-  flex-basis: 20em;
-}
-#javaInfotxt,
-#bugrockInfotxt {
-  margin: 1em;
-  padding: 1em;
+  border: solid black 1px;
+  font-size: 160%;
+  flex-basis: 50em;
 }
 
-@media screen and (max-width: 800px) {
+.bugrock-box-div {
+  margin-left: 16em;
+  margin-right: 1em;
+}
+
+.java-box-div {
+  margin-left: 1em;
+  margin-right: 16em;
+}
+
+@media screen and (max-width: 430px) {
   .dropdown-div {
     display: inline-block;
   }
@@ -151,19 +152,24 @@ h1 {
     display: none;
   }
 
-  .serverInfoboxes div {
+  .serverboxes {
+    display: inline-block;
     line-height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 80px;
   }
 
-  #javaInfotxt,
-  #bugrockInfotxt {
+  .bugrock-box-div {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .java-box-div {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #javatxt,
+  #bugrocktxt {
     line-height: 40px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
