@@ -82,7 +82,6 @@ nav ul a {
   color: #fff;
   font-size: 160%;
   text-decoration: none;
-  transition: color 0.15s;
 }
 
 .nav-ul {
@@ -90,7 +89,7 @@ nav ul a {
 }
 
 .logo {
-  font-size: 5em;
+  font-size: 500%;
 }
 
 .nav-left:hover,
@@ -126,7 +125,7 @@ nav ul a {
   display: none;
   position: absolute;
   background-color: #303030f5;
-  min-width: 25em;
+  min-width: 20em;
   min-height: auto;
   margin-top: 1.3em;
   overflow: auto;
@@ -211,11 +210,17 @@ header {
 }
 
 /* Cookie consent Start */
+
+.cookie-banner.hide {
+  display: none;
+}
+
 .cookie-banner {
+  display: flex;
   position: fixed;
   font-size: 180%;
-  bottom: 2em;
-  right: 2em;
+  bottom: 0.5em;
+  right: 0.5em;
   width: 20%;
   padding: 5px 14px;
   background-color: #303030;
@@ -225,14 +230,14 @@ header {
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.hide {
-  display: none;
+.cookie-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-bottom: 5px;
 }
 
-.btn {
-  position: relative;
-  margin-left: 5em;
-  margin-bottom: 1em;
+.ok-btn {
   font-size: 70%;
   background-color: #303030;
   color: #fff;
@@ -241,7 +246,6 @@ header {
 }
 
 .cookie-info {
-  margin-left: 1em;
   font-size: 70%;
   background-color: #303030;
   color: #fff;
@@ -314,35 +318,10 @@ header {
   .cookie-banner {
     position: fixed;
     font-size: 180%;
-    bottom: 1px;
-    left: 5px;
-    width: 90%;
+    bottom: 0;
+    left: 0;
+    min-width: 10em;
     padding: 5px 14px;
-    background-color: #303030f6;
-    color: #6b9275;
-    border: dashed 1px rgb(175, 175, 175);
-    border-radius: 3px;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .btn {
-    position: relative;
-    margin-left: 4em;
-    margin-bottom: 1em;
-    font-size: 70%;
-    background-color: #303030;
-    color: #fff;
-    border: dashed 1px;
-    cursor: pointer;
-  }
-
-  .cookie-info {
-    margin-left: 1em;
-    font-size: 70%;
-    background-color: #303030;
-    color: #fff;
-    border: dashed 1px;
-    cursor: pointer;
   }
 
   /* Cookie consent End */

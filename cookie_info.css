@@ -24,7 +24,7 @@ nav ul a {
 
 .logo {
   margin-right: 786px;
-  font-size: 5em;
+  font-size: 500%;
 }
 
 .nav-ul {
@@ -90,6 +90,21 @@ nav ul a {
   display: block;
 }
 /* Drop down End */
+
+header {
+  font-size: 160%;
+  text-align: center;
+}
+
+p {
+  line-height: 50px;
+  margin: 1em;
+}
+
+.list {
+  text-align: start;
+}
+
 @media screen and (max-width: 430px) {
   .dropdown-div {
     display: inline-block;

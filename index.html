@@ -14,12 +14,15 @@
 </head>
 
 <body>
+  <!-- Start of Yellow splash text -->
   <div class="tilt">
     <div id="status" class="pop">
       1.1.1! Go Check change Log to further see whats been updated!
     </div>
   </div>
+  <!-- End of Yellow splash text -->
 
+  <!-- Start of Navigation bar -->
   <nav>
     <ul class="nav-ul">
       <!-- Start of drop_down and links -->
@@ -47,6 +50,8 @@
       <!-- End of original nav-bat links -->
     </ul>
   </nav>
+  <!-- End of Navigation bar -->
+
 
   <!-- Start of notification bell -->
   <a class="notification-bell-btn" href="notifications.html">
@@ -56,6 +61,7 @@
   </a>
   <!-- end of notification bell -->
 
+  <!-- Start of Text -->
   <header>
     <div class="text">
       Hello there lads, I Welcome you To.. The MC Lads Website! <br />
@@ -67,19 +73,31 @@
       enjoy this website and hope you enjoy your rest of your day :D
     </div>
   </header>
+  <!-- End of Text -->
+
   <!-- Start of tutorial -->
   <abbr title="Quick tutorial"><img id="tutorial-png" src="images/Tutorial.png" alt="Tutorial" /></abbr>
   <!-- End of tutorial -->
 
+  <!-- Start of Version Text -->
   <p class="version">Version: 1.1.1</p>
+  <!-- End of Version Text -->
 
+  <!-- Start of Cookie banner -->
   <div class="cookie-banner">
-    <p class="cookie-banner-txt">
-      The Website uses cookies for the best possible experience. It will not sell users Information.
-    </p>
-    <button class="btn">Ok</button>
-    <button onclick="location.href='cookie_info.html'" type="button" class="cookie-info">Learn more</button>
+    <div class="cookie-banner-div">
+      <p class="cookie-banner-txt">
+        The Website uses cookies for the best possible experience. It will not sell users Information.
+      </p>
+      <div class="cookie-buttons">
+        <button class="ok-btn">Ok</button>
+        <button onclick="location.href='cookie_info.html'" type="button" class="cookie-info">Learn more</button>
+      </div>
+    </div>
   </div>
+  <!-- End of Cookie banner -->
+
+  <!-- Start of Cookie Function -->
   <script src="all.js"></script>
   <script>
     const cookieBox = document.querySelector(".cookie-banner"),
@@ -98,6 +116,8 @@
     //if cookie is set then hide the cookie box else show it
     checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
   </script>
+  <!-- End of Cookie Function -->
+
 
 </body>
 

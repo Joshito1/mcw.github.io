@@ -24,7 +24,7 @@ nav ul a {
 
 .logo {
   margin-right: 786px;
-  font-size: 5em;
+  font-size: 500%;
 }
 
 .nav-ul {
@@ -93,8 +93,16 @@ nav ul a {
 header {
   font-size: 160%;
   text-align: center;
-  padding-left: 17px;
-  padding-right: 17px;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.me {
+  position: absolute;
+  left: 0;
+  width: 11%;
+  height: auto;
+  float: left;
 }
 
 @media screen and (max-width: 430px) {
@@ -118,8 +126,18 @@ header {
     display: none;
   }
 
+  header {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
   p {
-    padding-right: 0;
-    padding-left: 0;
+    line-height: 30px;
+  }
+
+  .me {
+    width: 20%;
+    height: auto;
   }
 }
