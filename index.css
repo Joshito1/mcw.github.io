@@ -273,16 +273,20 @@ header {
   }
 
   .dropdown-div {
-    display: block;
+    display: flex;
     margin-left: 20px;
+    
   }
 
-  nav ul .dropdown-div {
+  .nav-ul {
     margin: 0;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     background: #303030;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .nav-left,
@@ -292,7 +296,7 @@ header {
 
   .logo {
     margin-left: 10px;
-    justify-self: center;
+    
   }
 
   /* Notification bell Start */
