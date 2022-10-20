@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +13,6 @@
 </head>
 
 <body>
-  <!-- Start of Yellow splash text -->
-  <div class="tilt">
-    <div id="status" class="pop">
-      1.1.1! Go Check change Log to further see whats been updated!
-    </div>
-  </div>
-  <!-- End of Yellow splash text -->
 
   <!-- Start of Navigation bar -->
   <nav>
@@ -42,11 +34,13 @@
       <!-- End of drop_down and links -->
 
       <!-- Start of original nav-bar links -->
-      <a class="nav-left" href="about_the_dev.html">About The Developer</a>
-      <a class="nav-left" href="mc_news.html">Minecraft News</a>
-      <a class="logo" href="#">MC Lads</a>
-      <a class="nav-right" href="mc_server_info.html">Minecraft Servers</a>
-      <a class="nav-right" href="change_log.html">Change Log</a>
+      <div class="og-nav-divs">
+        <a class="nav-left" href="about_the_dev.html">About The Developer</a>
+        <a class="nav-left" href="mc_news.html">Minecraft News</a>
+        <a class="logo" href="#">MC Lads</a>
+        <a class="nav-right" href="mc_server_info.html">Minecraft Servers</a>
+        <a class="nav-right" href="change_log.html">Change Log</a>
+      </div>
       <!-- End of original nav-bat links -->
     </ul>
   </nav>
@@ -57,12 +51,20 @@
   <a class="notification-bell-btn" href="notifications.html">
     <div class="notification-bell-png-div"><img src="images/notification_bell.png" alt="Notifications"
         class="notification-bell-png" /></div>
-    <div class="notification-bell-banner">0</div>
+    <!-- <div class="notification-bell-banner">0</div> -->
   </a>
   <!-- end of notification bell -->
 
   <!-- Start of Text -->
   <header>
+    <!-- Start of Yellow splash text -->
+    <div class="tilt">
+      <div id="status" class="pop">
+        1.1.1! Go Check change Log to further see whats been updated!
+      </div>
+    </div>
+    <!-- End of Yellow splash text -->
+
     <div class="text">
       Hello there lads, I Welcome you To.. The MC Lads Website! <br />
       In here I will be putting the information dedicated To both servers; The
@@ -84,7 +86,7 @@
   <!-- End of Version Text -->
 
   <!-- Start of Cookie banner -->
-  <div class="cookie-banner">
+  <!-- <div class="cookie-banner">
     <div class="cookie-banner-div">
       <p class="cookie-banner-txt">
         The Website uses cookies for the best possible experience. It will not sell users Information.
@@ -94,7 +96,7 @@
         <button onclick="location.href='cookie_info.html'" type="button" class="cookie-info">Learn more</button>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- End of Cookie banner -->
 
   <!-- Start of Cookie Function -->

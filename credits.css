@@ -105,9 +105,10 @@ h1 {
   font-size: 250%;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 900px) {
   .dropdown-div {
     display: inline-block;
+    justify-content: center;
   }
 
   .nav-ul {
@@ -115,7 +116,6 @@ h1 {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 20px;
-    justify-content: flex-start;
   }
 
   .logo {

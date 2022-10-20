@@ -116,7 +116,7 @@ header {
   font-size: 160%;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 900px) {
   .dropdown-div {
     display: inline-block;
   }

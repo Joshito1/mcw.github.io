@@ -48,13 +48,13 @@ nav ul a {
 
 .dropbtn {
   background-color: #303030;
-  padding: 10px;
   border: none;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown-div {
-  position: relative;
   display: none;
 }
 
@@ -62,9 +62,7 @@ nav ul a {
   display: none;
   position: absolute;
   background-color: #303030f5;
-  min-width: 25em;
-  min-height: auto;
-  margin-top: 1.3em;
+  margin-top: 20.7px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -100,7 +98,7 @@ h1 {
   display: inline-flex;
 }
 
-div {
+.notification-box {
   display: block;
   border: solid #303030 2px;
   background-color: whitesmoke;
@@ -111,9 +109,15 @@ div {
   padding-right: 1em;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 900px) {
   .dropdown-div {
-    display: inline-block;
+    display: block;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: normal;
   }
 
   .nav-ul {
@@ -121,11 +125,12 @@ div {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 20px;
-    justify-content: flex-start;
   }
 
   .logo {
-    margin-right: 0;
+    margin-right: 0px;
+    margin-left: 10px;
+    justify-self: center;
   }
 
   .back {

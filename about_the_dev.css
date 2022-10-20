@@ -1,5 +1,5 @@
 /* Start of navigation bar */
-nav ul {
+nav ul div {
   position: relative;
   margin: 0;
   padding: 20px;
@@ -10,7 +10,7 @@ nav ul {
   background: #303030;
 }
 
-nav ul a {
+nav ul div a {
   display: flex;
   color: #fff;
   font-size: 160%;
@@ -48,7 +48,8 @@ nav ul a {
 
 .dropbtn {
   background-color: #303030;
-  padding: 10px;
+  padding: 0;
+  margin: 0;
   border: none;
   cursor: pointer;
 }
@@ -105,7 +106,7 @@ header {
   float: left;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 900px) {
   .dropdown-div {
     display: inline-block;
   }

@@ -131,7 +131,7 @@ h1 {
   margin-right: 16em;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 900px) {
   .dropdown-div {
     display: inline-block;
   }

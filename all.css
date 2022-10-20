@@ -5,10 +5,9 @@ html {
   padding: 0;
   margin: 0;
   margin-bottom: 20em;
-  position: relative;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   position: relative;
