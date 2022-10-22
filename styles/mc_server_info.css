@@ -1,0 +1,170 @@
+body {
+  background-color: #f8f5f4;
+}
+/* start of navigation bar */
+nav ul {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #303030;
+}
+
+nav ul a {
+  display: flex;
+  color: #fff;
+  font-size: 160%;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.back {
+}
+
+.back:hover {
+  color: #6b9275;
+}
+
+.back:active {
+  color: #49614f;
+}
+
+.logo {
+  font-size: 500%;
+}
+
+/* end of navigation bar */
+/* Drop down Start */
+
+#dropdown-png {
+  width: 120%;
+  height: auto;
+}
+
+.dropbtn {
+  background-color: #303030;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-div {
+  position: relative;
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #303030f5;
+  min-width: 25em;
+  min-height: auto;
+  margin-top: 1.3em;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 40px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  color: #6b9275;
+}
+
+.dropdown-content a:active {
+  color: #49614f;
+}
+
+.show {
+  display: block;
+}
+/* Drop down End */
+.txtbrk {
+  width: auto;
+  border-left: 0;
+  border-right: 0;
+  border-top: 2px dotted #000000;
+  border-bottom: 0;
+}
+
+h1 {
+  font-size: 500%;
+  text-align: center;
+}
+.serverboxes {
+  display: flex;
+}
+.serverboxes .bugrock-box-div,
+.java-box-div {
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 75px;
+  border: solid black 1px;
+  font-size: 160%;
+  flex-basis: 50em;
+}
+
+.bugrock-box-div {
+  margin-left: 16em;
+  margin-right: 1em;
+}
+
+.java-box-div {
+  margin-left: 1em;
+  margin-right: 16em;
+}
+
+@media screen and (max-width: 900px) {
+  .dropdown-div {
+    display: inline-block;
+  }
+
+  .nav-ul {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .serverboxes {
+    display: inline-block;
+    line-height: 50px;
+  }
+
+  .bugrock-box-div {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .java-box-div {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #javatxt,
+  #bugrocktxt {
+    line-height: 40px;
+  }
+}
