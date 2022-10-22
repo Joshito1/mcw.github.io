@@ -23,8 +23,8 @@
   -webkit-transform: rotate(10deg);
   transform: rotate(10deg);
   position: absolute;
-  top: 7.6em;
   right: 15em;
+  bottom: 7em;
 }
 
 #status {
@@ -68,6 +68,7 @@
 
 /* End of Yellow splash text */
 /* Start of navigation bar */
+
 nav ul div {
   margin: 0;
   padding: 20px;
@@ -91,6 +92,14 @@ nav ul div a {
 
 .logo {
   font-size: 500%;
+}
+
+.dd-logo-div {
+  display: none;
+}
+
+.dd-logo {
+  display: none;
 }
 
 .nav-left:hover,
@@ -126,8 +135,6 @@ nav ul div a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #303030f5;
-  margin-top: 20.7px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -273,30 +280,31 @@ header {
   }
 
   .dropdown-div {
-    display: flex;
-    margin-left: 20px;
-    
+    display: inline-block;
+    padding: 0;
   }
 
-  .nav-ul {
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    background: #303030;
-    justify-content: center;
-    align-items: center;
+  .dd-logo-div {
+    padding: 0;
+  }
 
+  .dd-logo {
+    display: inline-flex;
+    padding: 0;
+    font-size: 500%;
+  }
+
+  nav ul div {
+    display: flex;
+    justify-content: normal;
+    padding: 10px;
+    padding-left: 0;
   }
 
   .nav-left,
-  .nav-right {
-    display: none;
-  }
-
+  .nav-right,
   .logo {
-    margin-left: 10px;
-    
+    display: none;
   }
 
   /* Notification bell Start */

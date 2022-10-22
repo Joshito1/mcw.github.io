@@ -3,18 +3,15 @@ body {
 }
 /* start of navigation bar */
 nav ul {
-  position: relative;
   margin: 0;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   background: #303030;
 }
 
 nav ul a {
-  position: relative;
   display: flex;
   color: #fff;
   font-size: 160%;
@@ -27,7 +24,6 @@ nav ul a {
 }
 
 .back {
-  margin-right: auto;
 }
 
 .back:hover {
@@ -39,7 +35,6 @@ nav ul a {
 }
 
 .logo {
-  margin-right: 786px;
   font-size: 500%;
 }
 
@@ -96,7 +91,7 @@ nav ul a {
 }
 /* Drop down End */
 .txtbrk {
-  width: 10em;
+  width: auto;
   border-left: 0;
   border-right: 0;
   border-top: 2px dotted #000000;

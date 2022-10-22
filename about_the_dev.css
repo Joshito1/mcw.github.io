@@ -1,11 +1,9 @@
 /* Start of navigation bar */
 nav ul div {
-  position: relative;
   margin: 0;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   background: #303030;
 }
@@ -19,11 +17,9 @@ nav ul div a {
 }
 
 .back {
-  margin-right: auto;
 }
 
 .logo {
-  margin-right: 786px;
   font-size: 500%;
 }
 
@@ -93,9 +89,12 @@ nav ul div a {
 /* Drop down End */
 header {
   font-size: 160%;
+  line-height: 50px;
   text-align: center;
+  margin-top: 1em;
   margin-left: 10em;
   margin-right: 10em;
+  border: solid 1px;
 }
 
 .me {

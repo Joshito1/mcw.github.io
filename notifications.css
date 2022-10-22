@@ -1,11 +1,9 @@
 /* Start of navigation bar */
 nav ul {
-  position: relative;
   margin: 0;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   background: #303030;
 }
@@ -19,11 +17,9 @@ nav ul a {
 }
 
 .back {
-  margin-right: auto;
 }
 
 .logo {
-  margin-right: 786px;
   font-size: 500%;
 }
 
@@ -95,18 +91,19 @@ h1 {
 }
 
 .notification-lists {
-  display: inline-flex;
+  margin-top: 5em;
+  display: flex;
 }
 
 .notification-box {
-  display: block;
   border: solid #303030 2px;
   background-color: whitesmoke;
   list-style: none;
-  width: auto;
-  padding: 0;
+  margin: 1em;
+  padding: 50px;
   padding-left: 1em;
   padding-right: 1em;
+  font-size: 150%;
 }
 
 @media screen and (max-width: 900px) {

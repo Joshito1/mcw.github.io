@@ -1,17 +1,14 @@
 /* Start of navigation bar */
 nav ul {
-  position: relative;
   margin: 0;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   background: #303030;
 }
 
 nav ul a {
-  position: relative;
   display: flex;
   color: #fff;
   font-size: 160%;
@@ -36,16 +33,13 @@ nav ul a {
 }
 
 #back {
-  margin-right: auto;
 }
 
 .logo {
   font-size: 500%;
-  margin-right: 269px;
 }
 
 #commentBox {
-  margin-right: 13em;
 }
 
 /* End of navigation bar */
@@ -106,13 +100,12 @@ nav ul a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  justify-self: center;
 }
 
 .box .info {
   position: relative;
   margin-top: 50px;
-  margin-left: 4em;
-  margin-right: 4em;
   padding: 50px;
   text-align: center;
   font-size: 160%;
@@ -141,14 +134,16 @@ h2 {
 
 .txtlogbrk {
   width: 30em;
+  padding: 15px;
+  margin: auto;
   border-left: 0;
   border-right: 0;
-  border-top: 2px dotted #000000;
-  border-bottom: 0;
+  border-top: 0;
+  border-bottom: 2px dotted #0000001c;
 }
 
 .random-link {
-  color: rgb(255, 255, 255);
+  color: rgb(174, 174, 174);
 }
 
 .bottomInfo {
@@ -158,7 +153,15 @@ h2 {
   margin-left: 5px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 300px) {
+  .box .info {
+    font-size: 100%;
+    margin-left: 80em;
+    margin-right: 80em;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .dropdown-div {
     display: inline-block;
   }
@@ -185,7 +188,46 @@ h2 {
   }
 
   .box .info {
-    font-size: 130%;
+    font-size: 120%;
+    margin-left: 50em;
+    margin-right: 50em;
+  }
+
+  .txtlogbrk {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .dropdown-div {
+    display: inline-block;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav-ul {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  h1 {
+    line-height: 50px;
+  }
+
+  .box .info {
+    font-size: 120%;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
   .txtlogbrk {

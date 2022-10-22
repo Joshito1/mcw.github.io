@@ -46,13 +46,16 @@
       <span style="font-weight: bold;" class="bugrock-server-boxTitle">Bedrock Server</span>
       <hr class="txtbrk">
       <p id="bugrocktxt">
-        Hello World!.. Bedrock Server Still in progress, this will soon be
-        updated.. Thank you!
+        Hello Lads! This is the Bedrock server. To join the server, copy or type down the info below.
         <hr>
-        Ip/Name: N/A
+        Ip#/Name: ***.***.*.**
+        <!-- 192.168.0.22 -->
         <br>
-        Port#: N/A
+        Port#: 19132
       </p>
+      <br>
+      <p>Time till server opens:</p>
+      <p id="timer">Time till Server Opens</p>
     </div>
     <!-- End of Bedrock Server Info -->
 
@@ -72,15 +75,40 @@
   </div>
   <!-- End of Java Server Info -->
 
-  <!-- <p>
-      Sorry.. This Page is still in development, The Dev will soon update This.
-    </p>
-    <p>thank you.</p>
-    <p>
-      Quick Preveiw of whats going to be on this page and what you are going to
+  <!-- Quick Preveiw of whats going to be on this page and what you are going to
       see: Minecraft server info, and amazing Photos on what you guys make. Also
-      things that we made in other worlds with amazing memories.
-    </p> -->
+      things that we made in other worlds with amazing memories. -->
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Dec 30, 2022 12:00:00 am").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="timer"
+      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "Server is Open!";
+      }
+    }, 1000);
+  </script>
 </body>
 
 </html>
