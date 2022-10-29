@@ -1,26 +1,34 @@
 /* Start of navigation bar */
-nav ul {
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: #303030;
+nav {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #303030;
 }
 
-nav ul a {
-  display: flex;
-  color: #fff;
-  font-size: 160%;
+nav a {
+  color: #f2f2f2;
+  text-align: center;
   text-decoration: none;
-  transition: color 0.15s;
+  font-size: 150%;
 }
 
-.nav-ul {
-  list-style-type: none;
+.nav-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  font-size: 500%;
+  padding: 0;
 }
 
 .back {
+  display: none;
+  padding-left: 5px;
 }
 
 .back:hover {
@@ -29,10 +37,6 @@ nav ul a {
 
 .back:active {
   color: #49614f;
-}
-
-.logo {
-  font-size: 500%;
 }
 
 /* End of navigation bar */
@@ -100,25 +104,13 @@ h1 {
   font-size: 250%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1370px) {
   .dropdown-div {
-    display: inline-block;
-    justify-content: center;
-  }
-
-  .nav-ul {
-    padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 20px;
-  }
-
-  .logo {
-    margin-right: 0;
+    display: none;
   }
 
   .back {
-    display: none;
+    display: inline-block;
   }
 
   .contribution {

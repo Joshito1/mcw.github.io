@@ -2,28 +2,36 @@ body {
   background-color: #f8f5f4;
 }
 /* start of navigation bar */
-nav ul {
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: #303030;
+nav {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #303030;
 }
 
-nav ul a {
-  display: flex;
-  color: #fff;
-  font-size: 160%;
+nav a {
+  color: #f2f2f2;
+  text-align: center;
   text-decoration: none;
-  transition: color 0.15s;
+  font-size: 150%;
 }
 
-.nav-ul {
-  list-style-type: none;
+.nav-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  font-size: 500%;
+  padding: 0;
 }
 
 .back {
+  display: none;
+  padding-left: 5px;
 }
 
 .back:hover {
@@ -32,10 +40,6 @@ nav ul a {
 
 .back:active {
   color: #49614f;
-}
-
-.logo {
-  font-size: 500%;
 }
 
 /* end of navigation bar */
@@ -48,24 +52,23 @@ nav ul a {
 
 .dropbtn {
   background-color: #303030;
-  padding: 10px;
+  padding: 0;
+  margin: 0;
   border: none;
   cursor: pointer;
 }
 
 .dropdown-div {
-  position: relative;
-  display: none;
+  display: block;
 }
 
 .dropdown-content {
+  background-color: #303030;
+  margin-top: 8.1em;
+  width: 100%;
   display: none;
   position: absolute;
-  background-color: #303030f5;
-  min-width: 25em;
-  min-height: auto;
-  margin-top: 1.3em;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -102,9 +105,7 @@ h1 {
   font-size: 500%;
   text-align: center;
 }
-.serverboxes {
-  display: flex;
-}
+/* Start of server boxes */
 .serverboxes .bugrock-box-div,
 .java-box-div {
   padding: 40px;
@@ -117,54 +118,53 @@ h1 {
 }
 
 .bugrock-box-div {
-  margin-left: 16em;
+  margin-left: 1em;
   margin-right: 1em;
 }
 
 .java-box-div {
+  margin-top: 1em;
   margin-left: 1em;
-  margin-right: 16em;
+  margin-right: 1em;
 }
 
-@media screen and (max-width: 900px) {
+.serverboxes {
+  display: inline-block;
+  line-height: 50px;
+}
+
+#javatxt,
+#bugrocktxt {
+  line-height: 40px;
+}
+/* End of server boxes */
+
+@media screen and (min-width: 1370px) {
   .dropdown-div {
-    display: inline-block;
-  }
-
-  .nav-ul {
-    padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 20px;
-    justify-content: flex-start;
-  }
-
-  .logo {
-    margin-right: 0;
-  }
-
-  .back {
     display: none;
   }
 
   .serverboxes {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: inline;
+  }
+
+  .back {
     display: inline-block;
-    line-height: 50px;
   }
 
   .bugrock-box-div {
-    margin-left: 1em;
+    margin-left: 16em;
     margin-right: 1em;
   }
 
   .java-box-div {
-    margin-top: 1em;
+    margin-top: 0;
     margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  #javatxt,
-  #bugrocktxt {
-    line-height: 40px;
+    margin-right: 16em;
   }
 }

@@ -10,11 +10,11 @@ html {
 * {
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 .ddbrk {
-  width: 20em;
+  width: 80%;
+  margin: auto;
   border-left: 0;
   border-right: 0;
   border-top: 2px dotted #6b9275;

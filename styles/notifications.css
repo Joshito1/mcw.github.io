@@ -1,26 +1,29 @@
 /* Start of navigation bar */
-nav ul {
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: #303030;
+nav {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #303030;
 }
 
-nav ul a {
-  display: flex;
-  color: #fff;
-  font-size: 160%;
+nav a {
+  color: #f2f2f2;
+  text-align: center;
   text-decoration: none;
-  transition: color 0.15s;
+  font-size: 150%;
 }
 
-.back {
+.nav-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
   font-size: 500%;
+  padding: 0;
 }
 
 .nav-ul {

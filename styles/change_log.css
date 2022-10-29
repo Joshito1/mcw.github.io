@@ -1,23 +1,33 @@
 /* Start of navigation bar */
-nav ul {
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: #303030;
+nav {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #303030;
 }
 
-nav ul a {
-  display: flex;
-  color: #fff;
-  font-size: 160%;
+nav a {
+  color: #f2f2f2;
+  text-align: center;
   text-decoration: none;
-  transition: color 0.15s;
+  font-size: 150%;
 }
 
-.nav-ul {
-  list-style-type: none;
+.nav-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  font-size: 500%;
+  padding: 0;
+}
+
+.nav-right {
+  float: right;
 }
 
 #back:hover,
@@ -32,16 +42,6 @@ nav ul a {
   color: #49614f;
 }
 
-#back {
-}
-
-.logo {
-  font-size: 500%;
-}
-
-#commentBox {
-}
-
 /* End of navigation bar */
 /* Drop down Start */
 
@@ -51,25 +51,24 @@ nav ul a {
 }
 
 .dropbtn {
-  background-color: #303030;
-  padding: 10px;
+  background-color: #30303000;
   border: none;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown-div {
-  position: relative;
-  display: none;
+  display: inline-block;
 }
 
 .dropdown-content {
+  background-color: #303030;
+  margin-top: 8.1em;
+  width: 100%;
   display: none;
   position: absolute;
-  background-color: #303030f5;
-  min-width: 25em;
-  min-height: auto;
-  margin-top: 1.3em;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -162,10 +161,6 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
-  .dropdown-div {
-    display: inline-block;
-  }
-
   .logo {
     margin: 0;
   }
@@ -198,26 +193,14 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (min-width: 1030px) {
   .dropdown-div {
-    display: inline-block;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  .nav-ul {
-    padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 20px;
-    justify-content: flex-start;
+    display: none;
   }
 
   .nav-left,
   .nav-right {
-    display: none;
+    display: inline;
   }
 
   h1 {

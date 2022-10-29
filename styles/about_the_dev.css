@@ -1,30 +1,34 @@
 /* Start of navigation bar */
-nav ul div {
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: #303030;
+nav {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #303030;
 }
 
-nav ul div a {
-  display: flex;
-  color: #fff;
-  font-size: 160%;
+nav a {
+  color: #f2f2f2;
+  text-align: center;
   text-decoration: none;
-  transition: color 0.15s;
+  font-size: 150%;
 }
 
-.back {
+.nav-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
   font-size: 500%;
+  padding: 0;
 }
 
-.nav-ul {
-  list-style-type: none;
+.back {
+  display: none;
+  padding-left: 5px;
 }
 
 .back:hover {
@@ -34,6 +38,7 @@ nav ul div a {
 .back:active {
   color: #49614f;
 }
+
 /* End of navigation bar */
 /* Drop down Start */
 
@@ -51,18 +56,16 @@ nav ul div a {
 }
 
 .dropdown-div {
-  position: relative;
-  display: none;
+  display: block;
 }
 
 .dropdown-content {
+  background-color: #303030;
+  margin-top: 8.1em;
+  width: 100%;
   display: none;
   position: absolute;
-  background-color: #303030f5;
-  min-width: 25em;
-  min-height: auto;
-  margin-top: 1.3em;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -89,55 +92,52 @@ nav ul div a {
 /* Drop down End */
 header {
   font-size: 160%;
-  line-height: 50px;
+  line-height: 30px;
   text-align: center;
+  padding: 20px;
   margin-top: 1em;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 1em;
+  margin-right: 1em;
   border: solid 1px;
+}
+
+h1 {
+  padding-bottom: 0.5em;
+  line-height: 40px;
 }
 
 .me {
   position: absolute;
   left: 0;
-  width: 11%;
+  width: 21%;
   height: auto;
-  float: left;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1370px) {
   .dropdown-div {
-    display: inline-block;
-  }
-
-  .nav-ul {
-    padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 20px;
-    justify-content: flex-start;
-  }
-
-  .logo {
-    margin-right: 0;
-  }
-
-  .back {
     display: none;
   }
 
-  header {
-    text-align: center;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-
-  p {
-    line-height: 30px;
+  .back {
+    display: inline-block;
   }
 
   .me {
-    width: 20%;
+    width: 11%;
     height: auto;
+  }
+
+  header {
+    font-size: 160%;
+    line-height: 10px;
+    padding: 20px;
+    margin-top: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+    border: solid 1px;
+  }
+
+  p {
+    line-height: 50px;
   }
 }
