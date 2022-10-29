@@ -16,30 +16,40 @@
 </head>
 
 <body>
+  <!-- Start of Navigation bar -->
   <nav>
     <ul class="nav-ul">
-      <!-- Start of drop_down and links -->
-      <div class="dropdown-div">
-        <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="../images/Drop_down.png"
-            alt="drop_down"></button>
-        <div id="dropdown-info" class="dropdown-content">
-          <a href="../index.html">&#60; Back To Homepage</a>
-          <hr class="ddbrk">
-          <a href="comment_box.html">Comment Box &#62;</a>
-          <hr class="ddbrk">
-          <a href="credits.html">Credits &#62;</a>
+      <div>
+        <!-- Start of original nav-bar links -->
+        <div class="og-nav">
+          <a id="back" class="nav-left" href="../index.html">&#60; Back To Homepage</a>
+          <div class="nav-center">
+            <a class="logo" href="#">MC Lads</a>
+          </div>
+          <div class="nav-right">
+            <a id="commentBox" class="nav-right" href="comment_box.html">Comment Box</a>
+            <a id="credits" class="nav-right" href="credits.html">Credits</a>
+          </div>
         </div>
+        <!-- End of original nav-bar links -->
+        <!-- Start of drop_down and links -->
+        <div class="dropdown-div">
+          <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="../images/Drop_down.png"
+              alt="drop_down"></button>
+          <div id="dropdown-info" class="dropdown-content">
+            <a href="../index.html">&#60; Back To Homepage</a>
+            <hr class="ddbrk">
+            <a href="comment_box.html">Comment Box &#62;</a>
+            <hr class="ddbrk">
+            <a href="credits.html">Credits &#62;</a>
+          </div>
+        </div>
+        <!-- End of drop_down and links -->
       </div>
-      <!-- End of drop_down and links -->
-      <!-- Start of original nav-bar links -->
-      <a id="back" class="nav-left" href="../index.html">&#60; Back To Homepage</a>
-      <a class="logo" href="#">MC Lads</a>
-      <a id="commentBox" class="nav-right" href="comment_box.html">Comment Box</a>
-      <a id="credits" class="nav-right" href="credits.html">Credits</a>
-      <!-- End of original nav-bar links -->
-
     </ul>
   </nav>
+  <!-- End of Navigation bar -->
+
 
   <!-- End of Nav  -->
   <!-- Start of Change Log Text -->
@@ -76,8 +86,6 @@
         <hr class="txtlogbrk">
         -Adding A quick tutorial Button, if youd like to Learn how to use the website (still have to do some
         things but it will do for now)-
-        <hr class="txtlogbrk">
-        -Update "Minecraft News" Page-
         <hr class="txtlogbrk">
         -Improve "Comment Box" Page (Can be found within Change Log)-
         <hr class="txtlogbrk">
