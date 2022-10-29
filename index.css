@@ -78,14 +78,9 @@ nav {
 nav a {
   color: #f2f2f2;
   text-align: center;
-  padding: 20px;
+  padding: 0px 30px 0px 30px;
   text-decoration: none;
   font-size: 150%;
-}
-
-.nav-left,
-.nav-right {
-  display: none;
 }
 
 .nav-center {
@@ -102,6 +97,21 @@ nav a {
 
 .nav-right {
   float: right;
+}
+
+.nav-left,
+.nav-right {
+  display: none;
+}
+
+.nav-left:hover,
+.nav-right a:hover {
+  color: #6b9275;
+}
+
+.nav-left:active,
+.nav-right a:active {
+  color: #49614f;
 }
 
 /* End of navigation bar */
@@ -148,7 +158,7 @@ header {
 }
 
 .dropdown-div {
-  display: block;
+  display: inline-block;
 }
 
 .dropdown-content {
@@ -212,6 +222,7 @@ header {
 /* Notification bell End */
 
 header {
+  position: relative;
   color: rgb(96, 139, 107);
   text-align: center;
   font-size: 160%;
