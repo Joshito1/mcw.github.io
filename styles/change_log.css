@@ -9,16 +9,15 @@ nav {
 nav a {
   color: #f2f2f2;
   text-align: center;
+  padding: 0px 30px 0px 30px;
   text-decoration: none;
   font-size: 150%;
 }
 
 .nav-center {
   float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0;
 }
 
 .logo {
@@ -28,6 +27,11 @@ nav a {
 
 .nav-right {
   float: right;
+}
+
+.nav-left,
+.nav-right {
+  display: none;
 }
 
 #back:hover,
@@ -40,6 +44,11 @@ nav a {
 #commentBox:active,
 #credits:active {
   color: #49614f;
+}
+
+.back {
+  display: none;
+  padding-left: 5px;
 }
 
 /* End of navigation bar */
@@ -64,7 +73,7 @@ nav a {
 
 .dropdown-content {
   background-color: #303030;
-  margin-top: 8.1em;
+  margin-top: 0.1em;
   width: 100%;
   display: none;
   position: absolute;
@@ -95,7 +104,6 @@ nav a {
 /* Drop down End */
 
 .box {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -106,20 +114,20 @@ nav a {
   position: relative;
   margin-top: 50px;
   padding: 50px;
+  width: 65%;
   text-align: center;
   font-size: 160%;
   background-color: #6b9275;
   line-height: 25px;
-  flex-basis: 60em;
 }
 
 h1 {
-  font-size: 250%;
+  line-height: 50px;
 }
 
 h2 {
-  margin-top: 3em;
-  margin-bottom: 1em;
+  padding-top: 3em;
+  padding-bottom: 1em;
 }
 
 .cur_ver_txt {
@@ -132,7 +140,7 @@ h2 {
 }
 
 .txtlogbrk {
-  width: 30em;
+  width: auto;
   padding: 15px;
   margin: auto;
   border-left: 0;
@@ -152,48 +160,7 @@ h2 {
   margin-left: 5px;
 }
 
-@media screen and (max-width: 300px) {
-  .box .info {
-    font-size: 100%;
-    margin-left: 80em;
-    margin-right: 80em;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .logo {
-    margin: 0;
-  }
-
-  .nav-ul {
-    padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 20px;
-    justify-content: flex-start;
-  }
-
-  .nav-left,
-  .nav-right {
-    display: none;
-  }
-
-  h1 {
-    line-height: 50px;
-  }
-
-  .box .info {
-    font-size: 120%;
-    margin-left: 50em;
-    margin-right: 50em;
-  }
-
-  .txtlogbrk {
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 1370px) {
   .dropdown-div {
     display: none;
   }
@@ -203,17 +170,25 @@ h2 {
     display: inline;
   }
 
+  .nav-center {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+
+  .back {
+    display: inline-block;
+  }
+
   h1 {
-    line-height: 50px;
+    font-size: 250%;
   }
 
   .box .info {
-    font-size: 120%;
     margin-left: 2em;
     margin-right: 2em;
-  }
-
-  .txtlogbrk {
-    width: auto;
   }
 }
