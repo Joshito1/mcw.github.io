@@ -161,7 +161,7 @@ header {
   box-shadow: 0 0 0 10px #c6c6c6;
   outline: solid 2px rgb(0, 0, 0);
   outline-offset: 0.5em;
-  font: bold 1rem sans-serif;
+  font: bold 1rem;
   padding: 1rem;
 }
 
@@ -194,6 +194,7 @@ header {
 .cancel,
 .next,
 .finish {
+  font-family: "VT323";
   padding: 5px;
   border: black;
   cursor: pointer;
