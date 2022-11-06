@@ -19,27 +19,21 @@
 <body>
   <!-- Start of Navigation bar -->
   <nav>
-    <ul class="nav-ul">
-      <div>
-        <!-- Start of original nav-bar links -->
-        <div class="og-nav">
-          <a class="back" href="../../index.html">&#60; Back To Homepage</a>
-          <div class="nav-center">
-            <a class="logo" href="#">MC Lads</a>
-          </div>
-        </div>
-        <!-- End of original nav-bar links -->
-        <!-- Start of drop_down and links -->
-        <div class="dropdown-div">
-          <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="../images/Drop_down.png"
-              alt="drop_down"></button>
-          <div id="dropdown-info" class="dropdown-content">
-            <a href="../../index.html"> &#60; Back To Homepage</a>
-          </div>
-        </div>
-        <!-- End of drop_down and links -->
+    <!-- Start of original nav-bar links -->
+    <a class="back" href="../../index.html">&#60; Back To Homepage</a>
+    <div class="nav-center">
+      <a class="logo" href="#">MC Lads</a>
+    </div>
+    <!-- End of original nav-bar links -->
+    <!-- Start of drop_down and links -->
+    <div class="dropdown-div">
+      <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="../images/Drop_down.png"
+          alt="drop_down"></button>
+      <div id="dropdown-info" class="dropdown-content">
+        <a href="../../index.html"> &#60; Back To Homepage</a>
       </div>
-    </ul>
+    </div>
+    <!-- End of drop_down and links -->
   </nav>
   <!-- End of Navigation bar -->
 
@@ -53,7 +47,7 @@
       <span style="font-weight: bold;" class="bugrock-server-boxTitle">Bedrock Server</span>
       <hr class="txtbrk">
       <p id="bugrocktxt">
-        Hello Lads! This is the Bedrock server. To join the server, copy or type down the info below.
+        Hello Lads! This is the Bedrock server. <br> To join the server, copy-paste or type down the info below.
         <hr>
         Ip#/Name: ***.***.*.**
         <!-- 192.168.0.22 -->
@@ -62,7 +56,7 @@
       </p>
       <br>
       <p>Time till server opens:</p>
-      <p id="timer">Time till Server Opens</p>
+      <p id="timer">Time left untill Server opens on Nov 11, 2022 12:00:00 am</p>
     </div>
     <!-- End of Bedrock Server Info -->
 
@@ -88,7 +82,7 @@
 
   <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Dec 30, 2022 12:00:00 am").getTime();
+    var countDownDate = new Date("Nov 11, 2022 12:00:00 am").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
