@@ -10,53 +10,53 @@
   <title>MC Lads Website</title>
   <link rel="stylesheet" href="styles/all.css" />
   <link rel="stylesheet" href="index.css" />
+  <style>
+
+  </style>
 </head>
 
 <body>
   <!-- Start of Navigation bar -->
   <nav>
-    <ul class="nav-ul">
-      <div>
-        <!-- Start of original nav-bar links -->
-        <div class="og-nav">
-          <a class="nav-left" href="pages/mc_server_info.html">Minecraft Servers</a>
-          <div class="nav-center">
-            <a class="logo" href="#">MC Lads</a>
-          </div>
-          <div class="nav-right">
-            <a class="about-dev" href="pages/about_the_dev.html">About The Developer</a>
-            <a class="change-log" href="pages/change_log.html">Change Log</a>
-          </div>
-        </div>
-        <!-- End of original nav-bar links -->
-        <!-- Start of drop_down and links -->
-        <div class="dropdown-div">
-          <div id="dropdown-info" class="dropdown-content">
-            <a href="pages/mc_server_info.html">Minecraft Servers</a>
-            <hr class="ddbrk">
-            <a href="pages/about_the_dev.html">About The Developer</a>
-            <hr class="ddbrk">
-            <a href="pages/change_log.html">Change Log</a>
-          </div>
-        </div>
-
-        <div class="dropdown-div">
-          <button onclick="myFunction()" class="dropbtn"><span id="dropdown-png-span"><img id="dropdown-png"
-                src="images/Drop_down.png" alt="drop_down"></span></button>
-        </div>
-        <!-- End of drop_down and links -->
+    <!-- Start of original nav-bar links -->
+    <a class="nav-left" href="pages/mc_server_info.html">Minecraft Servers</a>
+    <div class="nav-right">
+      <a class="about-dev" href="pages/about_the_dev.html">About The Developer</a>
+      <a class="change-log" href="pages/change_log.html">Change Log</a>
+    </div>
+    <!-- End of original nav-bar links -->
+    <!-- Start of drop_down and links -->
+    <div class="dropdown-div">
+      <div id="dropdown-info" class="dropdown-content">
+        <a href="pages/mc_server_info.html">Minecraft Servers</a>
+        <hr class="ddbrk">
+        <a href="pages/about_the_dev.html">About The Developer</a>
+        <hr class="ddbrk">
+        <a href="pages/change_log.html">Change Log</a>
       </div>
-    </ul>
+    </div>
+
+    <div id="dropdown-div-btn" class="dropdown-div">
+      <button onclick="myFunction()" class="dropbtn">
+        <div id="dropdown-png-div"><img id="dropdown-png" src="images/Drop_down.png" alt="drop_down"></div>
+      </button>
+    </div>
+    <!-- End of drop_down and links -->
+    <div class="nav-center">
+      <a class="logo" href="#">MC Lads</a>
+    </div>
   </nav>
   <!-- End of Navigation bar -->
 
 
   <!-- Start of notification bell -->
-  <a class="notification-bell-btn" href="pages/notifications.html">
-    <div class="notification-bell-png-div"><img src="images/notification_bell.png" alt="Notifications"
-        class="notification-bell-png" /></div>
-    <!-- <div class="notification-bell-banner">0</div> -->
-  </a>
+  <div>
+    <a class="notification-bell-btn" href="pages/notifications.html">
+      <div class="notification-bell-png-div"><img src="images/notification_bell.png" alt="Notifications"
+          class="notification-bell-png" /></div>
+      <!-- <div class="notification-bell-banner">0</div> -->
+    </a>
+  </div>
   <!-- end of notification bell -->
 
   <!-- Start of Text -->
@@ -70,7 +70,7 @@
     <!-- End of Yellow splash text -->
 
     <div class="text">
-      Hello there lads, I Welcome you To.. The MC Lads Website! <br />
+      Hello there lads, I Welcome you To.. The MC Lads Website! <br>
       In here I will be putting the information to the MC Dedicated Server. If you have any ideas on improving the
       website Please let me know. So I hope you
       enjoy this website and hope you enjoy your rest of your day :D
@@ -79,7 +79,81 @@
   <!-- End of Text -->
 
   <!-- Start of tutorial -->
-  <abbr title="Quick tutorial"><img id="tutorial-png" src="images/Tutorial.png" alt="Tutorial" /></abbr>
+  <div>
+    <div class="tutorial_button_div">
+      <a class="tutorial_button">
+        <img onclick="tutorial_box_appear()" id="tutorial_png" src="images/Tutorial.png" alt="Tutorial" />
+      </a>
+    </div>
+    <!-- Start of tutorial boxes -->
+    <div id="tutorial_boxes">
+      <!--  -->
+      <div id="box_1" style="display: none;">
+        <div class="tutorial_txt">
+          <p>Would you like to start a quick tutorial to learn about the website?</p>
+        </div>
+        <button class="cancel" type="button" onclick="cancel_tutorial()">Not now</button>
+        <button class="next" type="button" onclick="next_box2(); hide_current1()">Sure</button>
+        <div class="tutorial_counter">
+        </div>
+      </div>
+      <!--  -->
+      <div id="box_2" style="display: none;">
+        <div id="pointer_2"></div>
+        <div class="tutorial_txt">
+          <p>How the name suggests, this is where you'll get the MC servers information. Click "Minecraft Servers" to
+            see
+            the server information, and to continue the tutorial, click the questoin mark again inside the MC Server
+            page. Else, click the Next button.</p>
+        </div>
+        <button class="back" type="button" onclick="previous_tutorial_1(); hide_current2()">previous</button>
+        <button class="next" type="button" onclick="next_box3(); hide_current2()">Next</button>
+        <div class="tutorial_counter">
+          <p>1 of 4</p>
+        </div>
+      </div>
+      <!--  -->
+      <div id="box_3" style="display: none;">
+        <div id="pointer_1"></div>
+        <div class="tutorial_txt">
+          <p>This page tells you about the Developer(Me). If you'd like to learn about the Developer, Click "About
+            The Developer". Else, click
+            Next</p>
+        </div>
+        <button class="back" type="button" onclick="previous_tutorial_2(); hide_current3()">previous</button>
+        <button class="next" type="button" onclick="next_box4(); hide_current3()">Next</button>
+        <div class="tutorial_counter">
+          <p>2 of 4</p>
+        </div>
+      </div>
+      <!--  -->
+      <div id="box_4" style="display: none;">
+        <div id="pointer_1"></div>
+        <div class="tutorial_txt">
+          <p>In this page you will find the changes that have been made, and will come overtime. You will also Find the
+            Comment box and credit pages. Click "Change log" to see more. Else, Click Next</p>
+        </div>
+        <button class="back" type="button" onclick="previous_tutorial_3(); hide_current4()">previous</button>
+        <button class="next" type="button" onclick="next_box5();hide_current4()">Next</button>
+        <div class="tutorial_counter">
+          <p>3 of 4</p>
+        </div>
+      </div>
+      <!--  -->
+      <div id="box_5" style="display: none;">
+        <div id="pointer_3"></div>
+        <div class="tutorial_txt">
+          <p>5</p>
+        </div>
+        <button class="back" type="button" onclick="previous_tutorial_4(); hide_current5()">previous</button>
+        <button class="finish" type="button" onclick="hide_current5()">Finish</button>
+        <div class="tutorial_counter">
+          <p>4 of 4</p>
+        </div>
+      </div>
+    </div>
+    <!-- End of tutorial boxes -->
+  </div>
   <!-- End of tutorial -->
 
   <!-- Start of Version Text -->
@@ -101,6 +175,7 @@
   <!-- End of Cookie banner -->
 
   <!-- Start of Cookie Function -->
+  <script src="scripts/index.js"></script>
   <script src="scripts/all.js"></script>
   <script>
     const cookieBox = document.querySelector(".cookie-banner"),
@@ -120,7 +195,6 @@
     checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
   </script>
   <!-- End of Cookie Function -->
-
 
 </body>
 

@@ -1,77 +1,9 @@
-/* Start of Yellow splash text */
-
-@-webkit-keyframes action {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes action {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-.tilt {
-  display: none;
-  -ms-transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-  transform: rotate(10deg);
-  position: absolute;
-  right: 15em;
-  bottom: 7em;
-}
-
-#status {
-  line-height: 30px;
-  overflow: hidden;
-  width: 20em;
-  text-align: center;
-  color: #bbb814;
-  font-size: 90%;
-  text-shadow: 1px 1px #0000008f;
-}
-
-.pop {
-  animation: pop 0.58s infinite;
-  -webkit-animation: pop 0.58s infinite;
-}
-
-@keyframes pop {
-  from {
-    transform: scale(0.95);
-  }
-  50% {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.95);
-  }
-}
-
-@-webkit-keyframes pop {
-  from {
-    -webkit-transform: scale(0.95);
-  }
-  50% {
-    -webkit-transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.95);
-  }
-}
-
 /* Start of navigation bar */
 nav {
+  display: flex;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background-color: #303030;
 }
 
@@ -86,13 +18,13 @@ nav a {
 .nav-center {
   float: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 20%;
+  padding: 0;
 }
 
 .logo {
   font-size: 500%;
+  padding: 0;
 }
 
 .nav-right {
@@ -116,37 +48,15 @@ nav a {
 
 /* End of navigation bar */
 
-/* End of Yellow splash text */
-
-header {
-  margin-top: 2em;
-  line-height: 36px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-#tutorial-png {
-  width: 10%;
-  height: auto;
-}
-
-/* Cookie consent Start */
-.cookie-banner {
-  position: fixed;
-  font-size: 180%;
-  bottom: 0;
-  left: 0;
-  min-width: 10em;
-  padding: 5px 14px;
-}
-
-/* Cookie consent End */
-
 /* Drop down Start */
 
 #dropdown-png {
   width: 120%;
   height: auto;
+}
+
+.dropdown-div {
+  display: inline-block;
 }
 
 .dropbtn {
@@ -157,13 +67,9 @@ header {
   margin: 0;
 }
 
-.dropdown-div {
-  display: inline-block;
-}
-
 .dropdown-content {
   background-color: #303030;
-  margin-top: 8.1em;
+  margin-top: 6.5em;
   width: 100%;
   display: none;
   position: absolute;
@@ -192,6 +98,7 @@ header {
   display: block;
 }
 /* Drop down End */
+
 /* Notification bell Start */
 
 .notification-bell-btn {
@@ -233,11 +140,98 @@ header {
   padding-bottom: 60px;
 }
 
-#tutorial-png {
-  top: 24em;
+#tutorial_png {
   position: relative;
-  width: 2%;
+  left: 5px;
+  width: 10%;
   height: auto;
+}
+
+.tutorial_txt {
+  padding-bottom: 1em;
+}
+
+[id*="box_"] {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  color: #f2f2f2;
+  background: rgba(0, 0, 0, 0.744);
+  border: ridge 4px rgb(122, 122, 122);
+  box-shadow: 0 0 0 10px #c6c6c6;
+  outline: solid 2px rgb(0, 0, 0);
+  outline-offset: 0.5em;
+  font: bold 1rem sans-serif;
+  padding: 1rem;
+}
+
+#box_1 {
+  top: 41em;
+  left: 1em;
+}
+
+#box_2 {
+  top: 7em;
+  left: 2em;
+}
+
+#box_3 {
+  top: 7em;
+  left: 80em;
+}
+
+#box_4 {
+  top: 7em;
+  left: 95em;
+}
+
+#box_5 {
+  top: 13em;
+  left: 2em;
+}
+
+.back,
+.cancel,
+.next,
+.finish {
+  padding: 5px;
+  border: black;
+  cursor: pointer;
+}
+
+[id*="pointer_"] {
+  border-top-color: transparent !important;
+  border-bottom-color: #c6c6c6;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  top: -40px;
+}
+
+#pointer_1 {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border: inset 14px #c6c6c6;
+}
+
+#pointer_2 {
+  display: block;
+  position: absolute;
+  left: 22px;
+  width: 0;
+  height: 0;
+  border: inset 14px #c6c6c6;
+}
+
+#pointer_3 {
+  display: block;
+  position: absolute;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border: inset 14px #c6c6c6;
 }
 
 .version {
@@ -311,17 +305,38 @@ header {
     display: block;
   }
 
-  .logo {
-    font-size: 500%;
+  nav {
+    padding: 50px 0px 50px 0px;
+    display: block;
+    position: relative;
+    background-color: #303030;
   }
 
   .dropdown-div {
     display: none;
   }
 
+  #dropdown-div-btn {
+    display: none;
+  }
+
   .nav-left,
   .nav-right {
     display: inline;
+  }
+
+  .dropdown-content {
+    width: 20%;
+    margin-top: 3.4em;
+  }
+
+  .nav-center {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
   }
 
   /* Notification bell Start */
@@ -337,4 +352,82 @@ header {
   }
 
   /* Notification bell End */
+  .tutorial_button_div {
+    position: relative;
+    top: 24em;
+  }
+
+  #tutorial_png {
+    width: 1.4%;
+    height: auto;
+  }
 }
+/* Start of Yellow splash text */
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.tilt {
+  display: none;
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  position: absolute;
+  right: 15em;
+  bottom: 7em;
+}
+
+#status {
+  line-height: 30px;
+  overflow: hidden;
+  width: 20em;
+  text-align: center;
+  color: #bbb814;
+  font-size: 90%;
+  text-shadow: 1px 1px #0000008f;
+}
+
+.pop {
+  animation: pop 0.58s infinite;
+  -webkit-animation: pop 0.58s infinite;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
+}
+
+@-webkit-keyframes pop {
+  from {
+    -webkit-transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.95);
+  }
+}
+/* End of Yellow splash text */
