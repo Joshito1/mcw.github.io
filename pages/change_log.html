@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Update Log</title>
-  <link rel="stylesheet" href="../styles/change_log.css" />
-  <link rel="stylesheet" href="../styles/all.css" />
-  <script src="../scripts/all.js"></script>
+  <link rel="stylesheet" href="../styles/change_log.css">
+  <link rel="stylesheet" href="../styles/all.css">
 
 </head>
 
@@ -19,12 +18,12 @@
   <!-- Start of Navigation bar -->
   <nav>
     <!-- Start of original nav-bar links -->
-    <a class="back" class="nav-left" href="../index.html">&#60; Back To Homepage</a>
+    <a class="nav-left" href="../index.html">&#60; Back To Homepage</a>
     <div class="nav-center">
       <a class="logo" href="#">MC Lads</a>
     </div>
     <div class="nav-right">
-      <a id="commentBox" class="nav-right" href="comment_box.html">Comment Box</a>
+      <a class="about-dev" href="../pages/about_the_dev.html">About The Developer</a>
       <a id="credits" class="nav-right" href="credits.html">Credits</a>
     </div>
     <!-- End of original nav-bar links -->
@@ -35,13 +34,12 @@
       <div id="dropdown-info" class="dropdown-content">
         <a href="../index.html">&#60; Back To Homepage</a>
         <hr class="ddbrk">
-        <a href="comment_box.html">Comment Box &#62;</a>
+        <a href="../pages/about_the_dev.html">About The Developer</a>
         <hr class="ddbrk">
         <a href="credits.html">Credits &#62;</a>
       </div>
     </div>
     <!-- End of drop_down and links -->
-    </ul>
   </nav>
   <!-- End of Navigation bar -->
 
@@ -59,6 +57,8 @@
       </p>
       <hr class="txtlogbrk">
       <p>
+        11/_/22- Added A quick tutorial Button, if youd like to Learn how to use the website-
+        <hr class="txtlogbrk">
         11/_/22- Minecraft server Finally made!-
         <hr class="txtlogbrk">
         11/_/22- Updated "About The Developer" Page
@@ -78,19 +78,14 @@
       <!-- End-Start -->
       <h2>Upcoming Versions and changes Log</h2>
       <p>
-        <hr class="txtlogbrk">
-        -Adding A quick tutorial Button, if youd like to Learn how to use the website (still have to do some
-        things but it will do for now)-
-        <hr class="txtlogbrk">
-        -Improve "Comment Box" Page (Can be found within Change Log)-
-        <hr class="txtlogbrk">
+        - None upcoming changes -
       </p>
+      <hr class="txtlogbrk">
       <!-- End-Start -->
       <h2>Previous Versions and changes Log</h2>
       <hr class="txtlogbrk">
       <p>
-        9/11/2022- Website now fully mobile compatible! YAY, Finally!! (For
-        certain devices, so still a little bit under development)
+        9/11/2022- Website now fully mobile compatible!
         <hr class="txtlogbrk">
         9/10/2022- All of the Websites pages have been updated to have the
         newer UI
@@ -99,16 +94,14 @@
         <abbr title="I really like how this turn out XD Let me know what you guys think">New!</abbr>- The Splash Text,
         Just like Minecraft. (Only seen on Homepage)
         <hr class="txtlogbrk">
-        6/26/2022-Changed a bit of viewport scaling so text could be a tiny
-        bit more visible on mobile (but still under a bit of development)
+        6/26/2022- Changed a bit of viewport scaling so text could be a tiny
+        bit more visible on mobile
         <hr class="txtlogbrk">
-        6/24/2022-Minor text and UI changes
+        6/24/2022- Minor text and UI changes
         <hr class="txtlogbrk">
-        6/24/2022-Added comment box (Not quite working, but it works)
+        6/23/2022- New Homepage UI
         <hr class="txtlogbrk">
-        6/23/2022-New Homepage UI
-        <hr class="txtlogbrk">
-        6/23/2022-New and clear wording. explaination on whats going to be on
+        6/23/2022- New and clear wording. explaination on whats going to be on
         pages.
       </p>
       <hr class="txtlogbrk">
@@ -119,6 +112,59 @@
     </div>
   </div>
   <!-- End of Change Log Text -->
+  <!-- Start of tutorial -->
+  <div>
+    <div class="tutorial_button_div">
+      <a class="tutorial_button">
+        <img onclick="tutorial_box_appear()" id="tutorial_png" src="../images/Tutorial.png" alt="Tutorial">
+      </a>
+    </div>
+    <!-- Start of tutorial boxes -->
+    <div id="tutorial_boxes">
+      <!--  -->
+      <div id="box_1" style="display: none;">
+        <div class="tutorial_txt">
+          <p>Would you like to start a quick tutorial to learn about the website?</p>
+        </div>
+        <button class="cancel" type="button" onclick="cancel_tutorial()">Not now</button>
+        <button class="next" id="top_button" type="button"
+          onclick="next_box2(); hide_current1(); scroll_top()">Sure</button>
+        <div class="tutorial_counter">
+        </div>
+      </div>
+      <!--  -->
+      <div id="box_2" style="display: none;">
+        <div class="pointer_1"></div>
+        <div class="tutorial_txt">
+          <p>This page tells you about the Developer(Me). If you'd like to learn about the Developer, Click "About
+            The Developer". Else, click
+            Next</p>
+        </div>
+        <button class="back" type="button" onclick="previous_tutorial_1(); hide_current2()">previous</button>
+        <button class="next" type="button" onclick="next_box3(); hide_current2()">Next</button>
+        <div class="tutorial_counter">
+          <p>1 of 2</p>
+        </div>
+      </div>
+      <!--  -->
+      <div id="box_3" style="display: none;">
+        <div class="pointer_1"></div>
+        <div class="tutorial_txt">
+          <p>In credits you will find The collaborators of the website. Click "Credits" to see people that have
+            collaborated In the website. Else, Click Finish</p>
+        </div>
+        <button class="back" type="button" onclick="previous_tutorial_2(); hide_current3()">previous</button>
+        <button class="next" type="button" onclick="hide_current3()">Finish</button>
+        <div class="tutorial_counter">
+          <p>2 of 2</p>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    <!-- End of tutorial boxes -->
+  </div>
+  <!-- End of tutorial -->
+
   <!-- Start of Bottom Info -->
   <div class="bottomInfo">
     <p>Last Modified: 11/_/22</p>
@@ -126,6 +172,7 @@
     <p>Version: 1.1.1</p>
   </div>
   <!-- End of Bottom Info -->
+  <script src="../scripts/all.js"></script>
 </body>
 
 </html>
