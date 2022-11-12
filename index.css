@@ -1,6 +1,76 @@
+/* Start of Yellow splash text */
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.tilt {
+  display: none;
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  position: absolute;
+  right: 15em;
+  bottom: 7em;
+}
+
+#status {
+  line-height: 30px;
+  overflow: hidden;
+  width: 20em;
+  text-align: center;
+  color: #bbb814;
+  font-size: 90%;
+  text-shadow: 1px 1px #0000008f;
+}
+
+.pop {
+  animation: pop 0.58s infinite;
+  -webkit-animation: pop 0.58s infinite;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
+}
+
+@-webkit-keyframes pop {
+  from {
+    -webkit-transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.95);
+  }
+}
+/* End of Yellow splash text */
+
 /* Start of navigation bar */
 nav {
-  display: flex;
+  width: 100%;
   position: relative;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -18,7 +88,9 @@ nav a {
 .nav-center {
   float: none;
   position: absolute;
-  left: 20%;
+  top: 23%;
+  left: 25%;
+  transform: translate(-5%, -5%);
   padding: 0;
 }
 
@@ -69,7 +141,7 @@ nav a {
 
 .dropdown-content {
   background-color: #303030;
-  margin-top: 6.5em;
+  margin-top: 1.6em;
   width: 100%;
   display: none;
   position: absolute;
@@ -139,10 +211,8 @@ header {
   padding-top: 0px;
   padding-bottom: 60px;
 }
-
+/* Tutorial Start */
 #tutorial_png {
-  position: relative;
-  left: 5px;
   width: 10%;
   height: auto;
 }
@@ -156,10 +226,10 @@ header {
   width: 15%;
   height: auto;
   color: #f2f2f2;
-  background: rgba(0, 0, 0, 0.744);
-  border: ridge 4px rgb(122, 122, 122);
+  background: #000000be;
+  border: ridge 4px #7a7a7a;
   box-shadow: 0 0 0 10px #c6c6c6;
-  outline: solid 2px rgb(0, 0, 0);
+  outline: solid 2px #000000;
   outline-offset: 0.5em;
   font: bold 1rem;
   padding: 1rem;
@@ -177,17 +247,12 @@ header {
 
 #box_3 {
   top: 7em;
-  left: 80em;
-}
-
-#box_4 {
-  top: 7em;
   left: 95em;
 }
 
-#box_5 {
+#box_4 {
   top: 13em;
-  left: 2em;
+  left: 1em;
 }
 
 .back,
@@ -195,12 +260,22 @@ header {
 .next,
 .finish {
   font-family: "VT323";
-  padding: 5px;
-  border: black;
+  color: #565656;
+  background-color: #c7c7c7;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid black;
   cursor: pointer;
 }
 
-[id*="pointer_"] {
+.back:active,
+.cancel:active,
+.next:active,
+.finish:active {
+  color: #000000;
+  background-color: #767676;
+}
+
+[class*="pointer_"] {
   border-top-color: transparent !important;
   border-bottom-color: #c6c6c6;
   border-left-color: transparent !important;
@@ -208,7 +283,16 @@ header {
   top: -40px;
 }
 
-#pointer_1 {
+.pointer_1 {
+  display: block;
+  position: absolute;
+  left: 35px;
+  width: 0;
+  height: 0;
+  border: inset 14px #c6c6c6;
+}
+
+.pointer_2 {
   display: block;
   position: absolute;
   right: 0px;
@@ -217,23 +301,15 @@ header {
   border: inset 14px #c6c6c6;
 }
 
-#pointer_2 {
+.pointer_3 {
   display: block;
   position: absolute;
-  left: 22px;
+  left: 5px;
   width: 0;
   height: 0;
   border: inset 14px #c6c6c6;
 }
-
-#pointer_3 {
-  display: block;
-  position: absolute;
-  left: 0px;
-  width: 0;
-  height: 0;
-  border: inset 14px #c6c6c6;
-}
+/* Tutorial End */
 
 .version {
   margin-top: 15em;
@@ -363,72 +439,3 @@ header {
     height: auto;
   }
 }
-/* Start of Yellow splash text */
-
-@-webkit-keyframes action {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes action {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-.tilt {
-  display: none;
-  -ms-transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-  transform: rotate(10deg);
-  position: absolute;
-  right: 15em;
-  bottom: 7em;
-}
-
-#status {
-  line-height: 30px;
-  overflow: hidden;
-  width: 20em;
-  text-align: center;
-  color: #bbb814;
-  font-size: 90%;
-  text-shadow: 1px 1px #0000008f;
-}
-
-.pop {
-  animation: pop 0.58s infinite;
-  -webkit-animation: pop 0.58s infinite;
-}
-
-@keyframes pop {
-  from {
-    transform: scale(0.95);
-  }
-  50% {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.95);
-  }
-}
-
-@-webkit-keyframes pop {
-  from {
-    -webkit-transform: scale(0.95);
-  }
-  50% {
-    -webkit-transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.95);
-  }
-}
-/* End of Yellow splash text */

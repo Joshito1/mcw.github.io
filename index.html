@@ -2,14 +2,14 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" type="text/css">
   <title>MC Lads Website</title>
-  <link rel="stylesheet" href="styles/all.css" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="styles/all.css">
+  <link rel="stylesheet" href="index.css">
   <style>
 
   </style>
@@ -21,7 +21,6 @@
     <!-- Start of original nav-bar links -->
     <a class="nav-left" href="pages/mc_server_info.html">Minecraft Servers</a>
     <div class="nav-right">
-      <a class="about-dev" href="pages/about_the_dev.html">About The Developer</a>
       <a class="change-log" href="pages/change_log.html">Change Log</a>
     </div>
     <!-- End of original nav-bar links -->
@@ -30,15 +29,13 @@
       <div id="dropdown-info" class="dropdown-content">
         <a href="pages/mc_server_info.html">Minecraft Servers</a>
         <hr class="ddbrk">
-        <a href="pages/about_the_dev.html">About The Developer</a>
-        <hr class="ddbrk">
         <a href="pages/change_log.html">Change Log</a>
       </div>
     </div>
 
     <div id="dropdown-div-btn" class="dropdown-div">
       <button onclick="myFunction()" class="dropbtn">
-        <div id="dropdown-png-div"><img id="dropdown-png" src="images/Drop_down.png" alt="drop_down"></div>
+        <img id="dropdown-png" src="images/Drop_down.png" alt="drop_down">
       </button>
     </div>
     <!-- End of drop_down and links -->
@@ -53,7 +50,7 @@
   <div>
     <a class="notification-bell-btn" href="pages/notifications.html">
       <div class="notification-bell-png-div"><img src="images/notification_bell.png" alt="Notifications"
-          class="notification-bell-png" /></div>
+          class="notification-bell-png"></div>
       <!-- <div class="notification-bell-banner">0</div> -->
     </a>
   </div>
@@ -82,7 +79,7 @@
   <div>
     <div class="tutorial_button_div">
       <a class="tutorial_button">
-        <img onclick="tutorial_box_appear()" id="tutorial_png" src="images/Tutorial.png" alt="Tutorial" />
+        <img onclick="tutorial_box_appear()" id="tutorial_png" src="images/Tutorial.png" alt="Tutorial">
       </a>
     </div>
     <!-- Start of tutorial boxes -->
@@ -99,59 +96,47 @@
       </div>
       <!--  -->
       <div id="box_2" style="display: none;">
-        <div id="pointer_2"></div>
+        <div class="pointer_1"></div>
         <div class="tutorial_txt">
-          <p>How the name suggests, this is where you'll get the MC servers information. Click "Minecraft Servers" to
+          <p>How the name suggests, this is where you'll get the MC servers information and how to enter it. Click
+            "Minecraft Servers" to
             see
-            the server information, and to continue the tutorial, click the questoin mark again inside the MC Server
-            page. Else, click the Next button.</p>
+            the server information. Else, click the Next button.</p>
         </div>
         <button class="back" type="button" onclick="previous_tutorial_1(); hide_current2()">previous</button>
         <button class="next" type="button" onclick="next_box3(); hide_current2()">Next</button>
         <div class="tutorial_counter">
-          <p>1 of 4</p>
+          <p>1 of 3</p>
         </div>
       </div>
       <!--  -->
       <div id="box_3" style="display: none;">
-        <div id="pointer_1"></div>
+        <div class="pointer_2"></div>
         <div class="tutorial_txt">
-          <p>This page tells you about the Developer(Me). If you'd like to learn about the Developer, Click "About
-            The Developer". Else, click
-            Next</p>
+          <p>In this page you will find the changes that have been made, and will come overtime. You will also Find
+            "About the Developer" and "Credit" pages. Click "Change log" to see more, and then again to continue the
+            tutorial,
+            click
+            the questoin mark inside the Change Log
+            page. Else, Click Next.</p>
         </div>
         <button class="back" type="button" onclick="previous_tutorial_2(); hide_current3()">previous</button>
-        <button class="next" type="button" onclick="next_box4(); hide_current3()">Next</button>
+        <button class="next" type="button" onclick="next_box4();hide_current3()">Next</button>
         <div class="tutorial_counter">
-          <p>2 of 4</p>
+          <p>2 of 3</p>
         </div>
       </div>
       <!--  -->
       <div id="box_4" style="display: none;">
-        <div id="pointer_1"></div>
-        <div class="tutorial_txt">
-          <p>In this page you will find the changes that have been made, and will come overtime. You will also Find the
-            Comment box and credit pages. Click "Change log" to see more, and then again, to continue the tutorial, click
-            the questoin mark inside the Chang Log
-            page. Else, Click Next</p>
-        </div>
-        <button class="back" type="button" onclick="previous_tutorial_3(); hide_current4()">previous</button>
-        <button class="next" type="button" onclick="next_box5();hide_current4()">Next</button>
-        <div class="tutorial_counter">
-          <p>3 of 4</p>
-        </div>
-      </div>
-      <!--  -->
-      <div id="box_5" style="display: none;">
-        <div id="pointer_3"></div>
+        <div class="pointer_3"></div>
         <div class="tutorial_txt">
           <p>Last but not least, the Notification page/Bell. In here you will get notifications of the website pages and
-            more. Click it to see what has been posted. Else, Click Finish</p>
+            more. Click it to see what has been posted. Else, Click Finish.</p>
         </div>
-        <button class="back" type="button" onclick="previous_tutorial_4(); hide_current5()">previous</button>
-        <button class="finish" type="button" onclick="hide_current5()">Finish</button>
+        <button class="back" type="button" onclick="previous_tutorial_3(); hide_current4()">previous</button>
+        <button class="finish" type="button" onclick="hide_current4()">Finish</button>
         <div class="tutorial_counter">
-          <p>4 of 4</p>
+          <p>3 of 3</p>
         </div>
       </div>
     </div>
@@ -176,9 +161,52 @@
     </div>
   </div> -->
   <!-- End of Cookie banner -->
+  <footer>
+    <!-- Start of footer nav links -->
+    <div class="footer_nav">
+      <ul>
+        <li>
+          <a href="index.html">MC Lads Homepage</a>
+        </li>
+        <li>
+          <a href="">Minecraft Servers</a>
+        </li>
+        <li>
+          <a href="">Change Log</a>
+        </li>
+        <li>
+          <a href="">About the Developer</a>
+        </li>
+        <li>
+          <a href="">Credits</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Start of footer contact -->
+    <br>
+    <div class="social" style="color: #f2f2f2;">
+      Social Media/Contacts
+      <!--  -->
+      <ul>
+        <li>
+          Discord:
+          <span>
+            <a href="http://"></a>
+          </span>
+        </li>
+        <li>
+          Email:
+          <span>
+            <a href="mailto:baruserojoshi@gmail.com">baruserojoshi@gmail.com</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    </div>
+  </footer>
 
   <!-- Start of Cookie Function -->
-  <script src="scripts/index.js"></script>
   <script src="scripts/all.js"></script>
   <script>
     const cookieBox = document.querySelector(".cookie-banner"),
