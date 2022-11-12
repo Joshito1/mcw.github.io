@@ -34,21 +34,14 @@ nav a {
   display: none;
 }
 
-#back:hover,
-#commentBox:hover,
-#credits:hover {
+.nav-left:hover,
+.nav-right a:hover {
   color: #6b9275;
 }
 
-#back:active,
-#commentBox:active,
-#credits:active {
+.nav-left:active,
+.nav-right a:active {
   color: #49614f;
-}
-
-.back {
-  display: none;
-  padding-left: 5px;
 }
 
 /* End of navigation bar */
@@ -153,6 +146,84 @@ h2 {
   color: rgb(174, 174, 174);
 }
 
+/* Tutorial Start */
+#tutorial_png {
+  width: 10%;
+  height: auto;
+}
+
+.tutorial_txt {
+  padding-bottom: 1em;
+}
+
+[id*="box_"] {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  color: #f2f2f2;
+  background: #000000be;
+  border: ridge 4px #7a7a7a;
+  box-shadow: 0 0 0 10px #c6c6c6;
+  outline: solid 2px #000000;
+  outline-offset: 0.5em;
+  font: bold 1rem;
+  padding: 1rem;
+}
+
+#box_1 {
+  top: 129em;
+  left: 1em;
+}
+
+#box_2 {
+  top: 7em;
+  left: 83em;
+}
+
+#box_3 {
+  top: 7em;
+  left: 95em;
+}
+
+#tutorial_boxes .back,
+.cancel,
+.next,
+.finish {
+  font-family: "VT323";
+  color: #565656;
+  background-color: #c7c7c7;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#tutorial_boxes .back:active,
+.cancel:active,
+.next:active,
+.finish:active {
+  color: #000000;
+  background-color: #767676;
+}
+
+[class*="pointer_"] {
+  border-top-color: transparent !important;
+  border-bottom-color: #c6c6c6;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  top: -40px;
+}
+
+.pointer_1 {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border: inset 14px #c6c6c6;
+}
+
+/* Tutorial End */
+
 .bottomInfo {
   font-family: "VT323", "noto sans";
   font-size: 160%;
@@ -190,5 +261,15 @@ h2 {
   .box .info {
     margin-left: 2em;
     margin-right: 2em;
+  }
+
+  .tutorial_button_div {
+    position: relative;
+    top: 4em;
+  }
+
+  #tutorial_png {
+    width: 1.4%;
+    height: auto;
   }
 }
