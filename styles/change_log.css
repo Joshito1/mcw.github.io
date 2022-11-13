@@ -34,16 +34,6 @@ nav a {
   display: none;
 }
 
-.nav-left:hover,
-.nav-right a:hover {
-  color: #6b9275;
-}
-
-.nav-left:active,
-.nav-right a:active {
-  color: #49614f;
-}
-
 /* End of navigation bar */
 /* Drop down Start */
 
@@ -118,7 +108,7 @@ h1 {
   line-height: 50px;
 }
 
-h2 {
+.box h2 {
   padding-top: 3em;
   padding-bottom: 1em;
 }
@@ -171,7 +161,7 @@ h2 {
 }
 
 #box_1 {
-  top: 129em;
+  top: 125em;
   left: 1em;
 }
 

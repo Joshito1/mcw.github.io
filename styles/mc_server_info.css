@@ -32,14 +32,6 @@ nav a {
   padding-left: 30px;
 }
 
-.back:hover {
-  color: #6b9275;
-}
-
-.back:active {
-  color: #49614f;
-}
-
 /* end of navigation bar */
 /* Drop down Start */
 
@@ -104,6 +96,10 @@ h1 {
   text-align: center;
 }
 /* Start of server boxes */
+.serverboxes {
+  margin-bottom: 10em;
+}
+
 .serverboxes .bugrock-box-div,
 .java-box-div {
   padding: 40px;
