@@ -104,16 +104,6 @@ nav a {
   display: none;
 }
 
-.nav-left:hover,
-.nav-right a:hover {
-  color: #6b9275;
-}
-
-.nav-left:active,
-.nav-right a:active {
-  color: #49614f;
-}
-
 /* End of navigation bar */
 
 /* Drop down Start */
@@ -207,6 +197,7 @@ header {
   font-size: 160%;
   font-weight: bold;
   line-height: 50px;
+  margin-bottom: 15em;
   padding: 75px;
   padding-top: 0px;
   padding-bottom: 60px;
@@ -312,7 +303,6 @@ header {
 /* Tutorial End */
 
 .version {
-  margin-top: 15em;
   margin-left: 5px;
   margin-bottom: 5px;
   font-size: 160%;
@@ -428,11 +418,6 @@ header {
   }
 
   /* Notification bell End */
-  .tutorial_button_div {
-    position: relative;
-    top: 24em;
-  }
-
   #tutorial_png {
     width: 1.4%;
     height: auto;
