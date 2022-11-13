@@ -24,30 +24,30 @@
       <a class="change-log" href="pages/change_log.html">Change Log</a>
     </div>
     <!-- End of original nav-bar links -->
-    <!-- Start of drop_down and links -->
-    <div class="dropdown-div">
-      <div id="dropdown-info" class="dropdown-content">
-        <a href="pages/mc_server_info.html">Minecraft Servers</a>
-        <hr class="ddbrk">
-        <a href="pages/change_log.html">Change Log</a>
-      </div>
-    </div>
-
-    <div id="dropdown-div-btn" class="dropdown-div">
-      <button onclick="myFunction()" class="dropbtn">
-        <img id="dropdown-png" src="images/Drop_down.png" alt="drop_down">
-      </button>
-    </div>
-    <!-- End of drop_down and links -->
     <div class="nav-center">
       <a class="logo" href="#">MC Lads</a>
     </div>
   </nav>
   <!-- End of Navigation bar -->
+  <!-- Start of drop_down and links -->
+  <div class="dropdown-div">
+    <div id="dropdown-info" class="dropdown-content">
+      <a href="pages/mc_server_info.html">Minecraft Servers</a>
+      <hr class="ddbrk">
+      <a href="pages/change_log.html">Change Log</a>
+    </div>
+  </div>
+
+  <div id="dropdown-div-btn" class="dropdown-div">
+    <button onclick="myFunction()" class="dropbtn">
+      <img id="dropdown-png" src="images/Drop_down.png" alt="drop_down">
+    </button>
+  </div>
+  <!-- End of drop_down and links -->
 
 
   <!-- Start of notification bell -->
-  <div>
+  <div class="notification-bell-btn-div">
     <a class="notification-bell-btn" href="pages/notifications.html">
       <div class="notification-bell-png-div"><img src="images/notification_bell.png" alt="Notifications"
           class="notification-bell-png"></div>
@@ -161,50 +161,28 @@
     </div>
   </div> -->
   <!-- End of Cookie banner -->
-  <footer>
+  <div class="footer-container">
     <!-- Start of footer nav links -->
-    <div class="footer_nav">
-      <ul>
-        <li>
-          <a href="index.html">MC Lads Homepage</a>
-        </li>
-        <li>
-          <a href="">Minecraft Servers</a>
-        </li>
-        <li>
-          <a href="">Change Log</a>
-        </li>
-        <li>
-          <a href="">About the Developer</a>
-        </li>
-        <li>
-          <a href="">Credits</a>
-        </li>
-      </ul>
+    <div class="footer">
+      <div class="footer-heading footer1">
+        <h2>Pages</h2>
+        <a href="index.html">MC Lads Homepage</a>
+        <a href="">Minecraft Servers</a>
+        <a href="">Change Log</a>
+        <a href="">About the Developer</a>
+        <a href="">Credits</a>
+      </div>
+      <!-- Start of footer contact -->
+      <div class="footer_heading footer2">
+        <!--  -->
+        <h2>Social Media/Contacts</h2>
+        Discord:
+        El_Cubano#8182
+        Email:
+        <a class="footer-email" href="mailto:baruserojoshi@gmail.com">baruserojoshi@gmail.com</a>
+      </div>
     </div>
-    <!-- Start of footer contact -->
-    <br>
-    <div class="social" style="color: #f2f2f2;">
-      Social Media/Contacts
-      <!--  -->
-      <ul>
-        <li>
-          Discord:
-          <span>
-            <a href="http://"></a>
-          </span>
-        </li>
-        <li>
-          Email:
-          <span>
-            <a href="mailto:baruserojoshi@gmail.com">baruserojoshi@gmail.com</a>
-          </span>
-        </li>
-      </ul>
-    </div>
-    <!--  -->
-    </div>
-  </footer>
+  </div>
 
   <!-- Start of Cookie Function -->
   <script src="scripts/all.js"></script>

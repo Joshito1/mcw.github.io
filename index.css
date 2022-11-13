@@ -74,7 +74,6 @@ nav {
   position: relative;
   padding-top: 22px;
   padding-bottom: 22px;
-  background-color: #303030;
 }
 
 nav a {
@@ -86,11 +85,8 @@ nav a {
 }
 
 .nav-center {
-  float: none;
-  position: absolute;
-  top: 23%;
-  left: 25%;
-  transform: translate(-5%, -5%);
+  display: flex;
+  justify-content: center;
   padding: 0;
 }
 
@@ -131,8 +127,13 @@ nav a {
   display: inline-block;
 }
 
+#dropdown-div-btn {
+  float: right;
+  margin: 5px 30px 0px 0px;
+}
+
 .dropbtn {
-  background-color: #30303000;
+  background-color: #00000000;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -141,7 +142,6 @@ nav a {
 
 .dropdown-content {
   background-color: #303030;
-  margin-top: 1.6em;
   width: 100%;
   display: none;
   position: absolute;
@@ -173,9 +173,9 @@ nav a {
 
 /* Notification bell Start */
 
-.notification-bell-btn {
+.notification-bell-btn-div {
   position: relative;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
 }
 
@@ -184,7 +184,7 @@ nav a {
   height: auto;
 }
 
-.notification-bell-banner {
+/* .notification-bell-banner {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -196,7 +196,7 @@ nav a {
   font-size: 150%;
   color: #ffffff;
   background: rgb(234, 0, 0);
-}
+} */
 
 /* Notification bell End */
 
@@ -386,7 +386,6 @@ header {
     padding: 50px 0px 50px 0px;
     display: block;
     position: relative;
-    background-color: #303030;
   }
 
   .dropdown-div {
