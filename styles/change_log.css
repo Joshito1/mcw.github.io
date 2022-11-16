@@ -1,9 +1,8 @@
 /* Start of navigation bar */
 nav {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  /* background-color: #303030; */
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 nav a {
@@ -35,6 +34,7 @@ nav a {
 }
 
 /* End of navigation bar */
+
 /* Drop down Start */
 
 #dropdown-png {
@@ -42,21 +42,26 @@ nav a {
   height: auto;
 }
 
+.dropdown-div {
+  display: inline-block;
+}
+
+#dropdown-div-btn {
+  float: right;
+  margin: 5px 30px 0px 0px;
+}
+
 .dropbtn {
-  background-color: #30303000;
+  background-color: #00000000;
   border: none;
   cursor: pointer;
   padding: 0;
   margin: 0;
 }
 
-.dropdown-div {
-  display: inline-block;
-}
-
 .dropdown-content {
+  margin-top: 5em;
   background-color: #303030;
-  margin-top: 0.1em;
   width: 100%;
   display: none;
   position: absolute;
@@ -73,20 +78,13 @@ nav a {
   text-align: center;
 }
 
-.dropdown-content a:hover {
-  color: #6b9275;
-}
-
-.dropdown-content a:active {
-  color: #49614f;
-}
-
 .show {
   display: block;
 }
 /* Drop down End */
 
 .box {
+  margin-top: 5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -137,6 +135,10 @@ h1 {
 }
 
 /* Tutorial Start */
+#tutorial {
+  display: none;
+}
+
 #tutorial_png {
   width: 10%;
   height: auto;
@@ -161,7 +163,7 @@ h1 {
 }
 
 #box_1 {
-  top: 125em;
+  top: 130em;
   left: 1em;
 }
 
@@ -231,6 +233,12 @@ h1 {
     display: inline;
   }
 
+  nav {
+    padding: 50px 0px 50px 0px;
+    display: block;
+    position: relative;
+  }
+
   .nav-center {
     float: none;
     position: absolute;
@@ -251,6 +259,10 @@ h1 {
   .box .info {
     margin-left: 2em;
     margin-right: 2em;
+  }
+
+  #tutorial {
+    display: block;
   }
 
   .tutorial_button_div {
