@@ -27,24 +27,26 @@
       <a id="credits" class="nav-right" href="credits.html">Credits</a>
     </div>
     <!-- End of original nav-bar links -->
-    <!-- Start of drop_down and links -->
-    <div class="dropdown-div">
-      <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="../images/Drop_down.png"
-          alt="drop_down"></button>
-      <div id="dropdown-info" class="dropdown-content">
-        <a href="../index.html">&#60; Back To Homepage</a>
-        <hr class="ddbrk">
-        <a href="../pages/about_the_dev.html">About The Developer</a>
-        <hr class="ddbrk">
-        <a href="credits.html">Credits &#62;</a>
-      </div>
-    </div>
-    <!-- End of drop_down and links -->
   </nav>
   <!-- End of Navigation bar -->
 
+  <!-- Start of drop_down and links -->
+  <div class="dropdown-div">
+    <div id="dropdown-info" class="dropdown-content">
+      <a href="../index.html">&#60; Back To Homepage</a>
+      <hr class="ddbrk">
+      <a href="../pages/about_the_dev.html">About The Developer &#62;</a>
+      <hr class="ddbrk">
+      <a href="credits.html">Credits &#62;</a>
+    </div>
+  </div>
 
-  <!-- End of Nav  -->
+  <div id="dropdown-div-btn" class="dropdown-div">
+    <button onclick="myFunction()" class="dropbtn"><img id="dropdown-png" src="../images/Drop_down.png"
+        alt="drop_down"></button>
+  </div>
+  <!-- End of drop_down and links -->
+
   <!-- Start of Change Log Text -->
   <div class="box">
     <div class="info">
@@ -53,21 +55,23 @@
       <h2>Latest changes made</h2>
       <p>
         <span class="cur_ver_txt">Current Version: </span>
-        <span class="top_version_number">1.1.1</span>
+        <span class="top_version_number">2.1</span>
       </p>
       <hr class="txtlogbrk">
       <p>
-        11/_/22- Changed UI-
+        11/_/22- Changed GUI on all pages-
         <hr class="txtlogbrk">
-        11/_/22- Added A quick tutorial Button, if youd like to Learn how to use the website-
-        <hr class="txtlogbrk">
-        11/_/22- Made Minecraft server!-
+        11/_/22- Added a footer-
         <hr class="txtlogbrk">
         11/_/22- Updated "About The Developer" Page-
         <hr class="txtlogbrk">
-        11/_/22- Added A drop down for small screens.-
-        <hr class="txtlogbrk">
         11/_/22- Added notifications (Bell icon on the Homepage)-
+        <hr class="txtlogbrk">
+        11/_/22- Added A drop down for small screens (The three lines with the house)-
+        <hr class="txtlogbrk">
+        11/_/22- Added A quick tutorial Button, if youd like to Learn how to use the website-
+        <hr class="txtlogbrk">
+        11/_/22- Made Minecraft server! (Go into Minecraft servers page on the Homepage to see more info)-
         <hr class="txtlogbrk">
         11/_/22- Fixed minor Dimensional confusions, while writing code on a small screen
         (Sorry my fault, I wrote the wrong dimensions)-
@@ -105,13 +109,13 @@
       <hr class="txtlogbrk">
       <!-- End-Start -->
       <h2>Ideas or features that might come to the website</h2>
+      <p>None</p>
       <hr class="txtlogbrk">
-      <p>Live Chat</p>
     </div>
   </div>
   <!-- End of Change Log Text -->
   <!-- Start of tutorial -->
-  <div>
+  <div id="tutorial">
     <div class="tutorial_button_div">
       <a class="tutorial_button">
         <img onclick="tutorial_box_appear()" id="tutorial_png" src="../images/Tutorial.png" alt="Tutorial">
@@ -167,7 +171,7 @@
   <div class="bottomInfo">
     <p>Last Modified: 11/_/22</p>
     <p>Date Started: 6/16/2022</p>
-    <p>Version: 1.1.1</p>
+    <p>Version: 2.1</p>
   </div>
   <!-- End of Bottom Info -->
   <!-- Start of footer -->
