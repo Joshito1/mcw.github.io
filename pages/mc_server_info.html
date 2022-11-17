@@ -52,8 +52,11 @@
         <p id="bugrocktxt">
           Hello Lads! This is the Bedrock server. <br> To join the server, copy-paste or type down the info below.
           <hr>
-          Ip#/Name: ***.***.*.**
-          <!-- 192.168.0.22 -->
+          Ip#/Name:
+          <span id="ip">
+            ***.***.*.**
+            <!-- 192.168.0.22 -->
+          </span>
           <br>
           Port#: 19132
         </p>
@@ -139,6 +142,7 @@
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("timer").innerHTML = "Server is Open!";
+        document.getElementById("ip").innerHTML = "192.168.0.22"
       }
     }, 1000);
   </script>
