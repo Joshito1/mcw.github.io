@@ -14,8 +14,8 @@ nav a {
 }
 
 .nav-center {
-  float: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding: 0;
 }
 
@@ -84,7 +84,7 @@ nav a {
 /* Drop down End */
 
 .box {
-  margin-top: 5em;
+  margin: 5em 0 10em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -93,7 +93,6 @@ nav a {
 
 .box .info {
   position: relative;
-  margin-top: 50px;
   padding: 50px;
   width: 65%;
   text-align: center;
@@ -139,8 +138,12 @@ h1 {
   display: none;
 }
 
+.tutorial_button {
+  cursor: pointer;
+}
+
 #tutorial_png {
-  width: 10%;
+  width: 8%;
   height: auto;
 }
 
@@ -150,6 +153,7 @@ h1 {
 
 [id*="box_"] {
   position: absolute;
+  z-index: 1;
   width: 15%;
   height: auto;
   color: #f2f2f2;
@@ -163,7 +167,7 @@ h1 {
 }
 
 #box_1 {
-  top: 130em;
+  bottom: 21em;
   left: 1em;
 }
 
@@ -216,11 +220,14 @@ h1 {
 
 /* Tutorial End */
 
+#info {
+  float: left;
+  margin: 1em 0 0 5px;
+}
+
 .bottomInfo {
-  font-family: "VT323", "noto sans";
   font-size: 160%;
-  margin-top: 3em;
-  margin-left: 5px;
+  color: #608b6b;
 }
 
 @media screen and (min-width: 1370px) {
@@ -265,13 +272,8 @@ h1 {
     display: block;
   }
 
-  .tutorial_button_div {
-    position: relative;
-    top: 4em;
-  }
-
   #tutorial_png {
-    width: 1.4%;
+    width: 10%;
     height: auto;
   }
 }
