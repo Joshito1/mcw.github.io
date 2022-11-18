@@ -52,17 +52,18 @@
         <p id="bugrocktxt">
           Hello Lads! This is the Bedrock server. <br> To join the server, copy-paste or type down the info below.
           <hr>
+          Server: Online
+          <br>
           Ip#/Name:
           <span id="ip">
-            ***.***.*.**
-            <!-- 192.168.0.22 -->
+            192.168.0.22
           </span>
           <br>
           Port#: 19132
         </p>
         <br>
-        <p>Time till server opens:</p>
-        <p id="timer">Time left untill Server opens on Nov 18, 2022 12:00:00 am</p>
+        <p>Time since server opened:</p>
+        <p id="timer"></p>
       </div>
       <!-- End of Bedrock Server Info -->
 
@@ -113,38 +114,45 @@
     </div>
   </div>
 
-
-
   <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Nov 18, 2022 12:00:00 am").getTime();
+    // the date to count from
+    const startFrom = new Date('Nov 18, 2022 12:00:00 am');
+    // the html element to display the result in
+    const element = document.getElementById('timer');
 
-    // Update the count down every 1 second
-    var x = setInterval(function () {
+    // repeat every second:
+    setInterval(displayDifference, 1000)
 
-      // Get today's date and time
-      var now = new Date().getTime();
+    function displayDifference() {
+      // find difference between dates, expressed in milliseconds
+      const difference = Date.now() - startFrom;
+      // calculate the time units
+      const { months, days, hours, minutes, seconds } = formatMilliseconds(difference);
+      // show the formatted time units on the page
+      element.innerText = `${months}mo ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
 
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="timer"
-      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "Server is Open!";
-        document.getElementById("ip").innerHTML = "192.168.0.22"
-      }
-    }, 1000);
+    function formatMilliseconds(duration) {
+      // How many full months fit into the difference
+      const months = Math.floor(duration / 30 / 24 / 60 / 60 / 1000);
+      // remove the full months from the difference
+      duration -= months * 30 * 24 * 60 * 60 * 1000;
+      // how many full days fit into the remaining difference
+      const days = Math.floor(duration / 24 / 60 / 60 / 1000);
+      // remove days from remaining difference
+      duration -= days * 24 * 60 * 60 * 1000;
+      // and so on...
+      const hours = Math.floor(duration / 60 / 60 / 1000);
+      duration -= hours * 60 * 60 * 1000;
+      const minutes = Math.floor(duration / 60 / 1000);
+      duration -= minutes * 60 * 1000;
+      const seconds = Math.floor(duration / 1000);
+      duration -= seconds * 1000;
+      return {
+        months, days, hours, minutes, seconds,
+        milliseconds: duration
+      };
+    }
   </script>
 </body>
 
