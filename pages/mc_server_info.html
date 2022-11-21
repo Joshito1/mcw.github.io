@@ -52,17 +52,19 @@
         <p id="bugrocktxt">
           Hello Lads! This is the Bedrock server. <br> To join the server, copy-paste or type down the info below.
           <hr>
-          Server: OFFLINE
+          Server: CLOSED
           <br>
           Ip#/Name:
           <span id="ip">
-            192.168.0.22
+            ***.***.*.**
+            <!-- 192.168.0.22 -->
           </span>
           <br>
           Port#: 19132
         </p>
         <br>
-        <p>Time since server opened:</p>
+        <p>Server CLOSED because of some Networking Issues, will open once the next 1.19.50 Minecraft update comes. (If
+          havent Seen notifications (Bell on homepage), please go check it out.)</p>
         <p id="bug_timer"></p>
       </div>
       <!-- End of Bedrock Server Info -->
@@ -74,12 +76,14 @@
         <p id="javatxt">
           Hello Lads! This is The Java server. To join the server, copy-paste or type down the info below.
           <hr>
-          Ip/Name: 192.168.0.22
+          Server Status: OFFLINE <br> - Will open Tomorrow -
           <br>
+          Ip#/Name: 192.168.0.22
         </p>
-      </div>
-  <p>Time since server opened:</p>
+        <br>
+        <p>Time since server opened:</p>
         <p id="java_timer"></p>
+      </div>
     </div>
     <!-- End of Java Server Info -->
 
@@ -115,50 +119,9 @@
 
   <script>
     // the date to count from
-    const startFrom = new Date('Nov 18, 2022 12:00:00 am');
-    // the html element to display the result in
-    const element = document.getElementById('bug_timer');
-
-    // repeat every second:
-    setInterval(displayDifference, 1000)
-
-    function displayDifference() {
-      // find difference between dates, expressed in milliseconds
-      const difference = Date.now() - startFrom;
-      // calculate the time units
-      const { months, days, hours, minutes, seconds } = formatMilliseconds(difference);
-      // show the formatted time units on the page
-      element.innerText = `${months}mo ${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-
-    function formatMilliseconds(duration) {
-      // How many full months fit into the difference
-      const months = Math.floor(duration / 30 / 24 / 60 / 60 / 1000);
-      // remove the full months from the difference
-      duration -= months * 30 * 24 * 60 * 60 * 1000;
-      // how many full days fit into the remaining difference
-      const days = Math.floor(duration / 24 / 60 / 60 / 1000);
-      // remove days from remaining difference
-      duration -= days * 24 * 60 * 60 * 1000;
-      // and so on...
-      const hours = Math.floor(duration / 60 / 60 / 1000);
-      duration -= hours * 60 * 60 * 1000;
-      const minutes = Math.floor(duration / 60 / 1000);
-      duration -= minutes * 60 * 1000;
-      const seconds = Math.floor(duration / 1000);
-      duration -= seconds * 1000;
-      return {
-        months, days, hours, minutes, seconds,
-        milliseconds: duration
-      };
-    }
-  </script>
-  <script>
-    // the date to count from
-    const startFrom = new Date('Nov 20, 2022 12:00:00 am');
+    const startFrom = new Date('Nov 20, 2022 8:30:00 pm');
     // the html element to display the result in
     const element = document.getElementById('java_timer');
-
     // repeat every second:
     setInterval(displayDifference, 1000)
 
