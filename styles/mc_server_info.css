@@ -21,6 +21,12 @@ nav a {
   padding: 0;
 }
 
+.nav-right {
+  color: #b9b9b9;
+  float: right;
+  padding-right: 10px;
+}
+
 .logo {
   font-size: 500%;
   padding: 0;
