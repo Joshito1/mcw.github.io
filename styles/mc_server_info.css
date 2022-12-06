@@ -136,6 +136,118 @@ h1 {
 }
 /* End of server boxes */
 
+:root {
+  --button-background: rgba(255, 255, 255, 0);
+  --button-color: rgb(0, 0, 0);
+  --dropdown-highlight: rgb(80, 88, 95);
+  --dropdown-width: 250px;
+  --dropdown-background: rgb(238, 238, 238);
+  --dropdown-color: rgb(80, 88, 95);
+}
+
+/* Boring button styles */
+a.button {
+  /* Frame */
+  padding: 5px 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  /* Style */
+  border: none;
+  background: var(--button-background);
+  color: var(--button-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.requirments_drpdwn {
+  position: relative;
+  padding: 0;
+  margin-right: 1em;
+  border: none;
+}
+
+.requirments_drpdwn > summary::-webkit-details-marker {
+  display: none;
+}
+
+.requirments_drpdwn summary:focus {
+  outline: none;
+}
+
+.requirments_drpdwn summary:focus a.button {
+  border: 2px solid white;
+}
+
+.requirments_drpdwn summary:focus {
+  outline: none;
+}
+
+.requirments_drpdwn ul {
+  position: absolute;
+  margin: 20px 0 0 0;
+  padding: 0px 0;
+  width: var(--dropdown-width);
+  left: 50%;
+  margin-left: calc((var(--dropdown-width) / 2) * -1);
+  box-sizing: border-box;
+  z-index: 2;
+  background: var(--dropdown-background);
+  border: solid black 1px;
+  border-radius: 2px;
+  list-style: none;
+}
+
+.requirments_drpdwn ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.requirments_drpdwn ul li a:link,
+.requirments_drpdwn ul li a:visited {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--dropdown-color);
+  text-decoration: none;
+}
+
+.requirments_drpdwn ul li a:hover {
+  background-color: var(--dropdown-highlight);
+  color: var(--dropdown-background);
+}
+
+/* Dropdown triangle */
+.requirments_drpdwn ul::before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent black transparent;
+}
+
+/* Close the dropdown with outside clicks */
+.requirments_drpdwn > summary::before {
+  display: none;
+}
+
+.requirments_drpdwn[open] > summary::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 @media screen and (min-width: 1370px) {
   .dropdown-div {
     display: none;
