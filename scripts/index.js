@@ -8,6 +8,11 @@ const arr = [
   "There's still this rule called 'Dont Mine strait down!' Even tho you wont find any more lava pockets!",
   "你好世界",
   "Hola Mundo!",
+  "!Bedrock VS. Java!",
+  "I like turtles.",
+  "I will be updating the website randomly, so please check in every Friday",
+  "Remember that not all things will be seen on mobile like in Computer and vice versa.",
+  "Will be adding more splashes!..",
 ];
 const el = document.querySelector("#status");
 
