@@ -5,6 +5,9 @@ const arr = [
   "Dont look at they're eyess!..",
   "Creeper! Ohh man!",
   "Please dont kill my dogs!",
+  "There's still this rule called 'Dont Mine strait down!' Even tho you wont find any more lava pockets!",
+  "你好世界",
+  "Hola Mundo!",
 ];
 const el = document.querySelector("#status");
 
