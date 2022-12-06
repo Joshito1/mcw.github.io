@@ -2,6 +2,9 @@ const arr = [
   "Hello World!",
   "Who Voted for phantoms!!",
   "Who likes axolotles?",
+  "Dont look at they're eyess!..",
+  "Creeper! Ohh man!",
+  "Please dont kill my dogs!",
 ];
 const el = document.querySelector("#status");
 
